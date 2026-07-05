@@ -1,7 +1,7 @@
 const footerLinks = [
-  { label: "GitHub", href: "https://github.com/placeholder" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/placeholder" },
-  { label: "Email", href: "mailto:placeholder@example.com" }
+  { label: "GitHub", href: "https://github.com/Zachary-Levesque" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/zachary-levesque" },
+  { label: "Email", href: "mailto:zlevesque93@gmail.com" }
 ];
 
 export function Footer() {
