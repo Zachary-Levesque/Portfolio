@@ -18,16 +18,21 @@ export default function AboutPage() {
 
   return (
     <div className="mx-auto max-w-3xl space-y-14">
-      <div className="relative aspect-[4/5] w-full max-w-80 overflow-hidden rounded-lg border border-border bg-surface">
-        <Image
-          src="/images/professional.jpeg"
-          alt="Professional portrait of Zachary Levesque"
-          fill
-          priority
-          sizes="(max-width: 768px) 100vw, 320px"
-          className="object-cover"
-        />
-      </div>
+      <figure>
+        <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border bg-surface">
+          <Image
+            src="/images/taiwan.jpeg"
+            alt="Zachary at NCKU Semiconductor Summer School in Taiwan"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="object-cover"
+          />
+        </div>
+        <figcaption className="mt-2 font-mono text-xs text-muted">
+          NCKU Semiconductor Summer School, Taiwan.
+        </figcaption>
+      </figure>
 
       <div className="space-y-12">
         {sections.map((section) => (
@@ -36,22 +41,6 @@ export default function AboutPage() {
               {section.title}
             </h2>
             <p className="text-lg leading-8 text-foreground">{section.body}</p>
-            {section.title === "A story" ? (
-              <figure className="pt-3">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border bg-surface">
-                  <Image
-                    src="/images/taiwan.jpeg"
-                    alt="Zachary at NCKU Semiconductor Summer School in Taiwan"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 768px"
-                    className="object-cover"
-                  />
-                </div>
-                <figcaption className="mt-2 font-mono text-xs text-muted">
-                  NCKU Semiconductor Summer School, Taiwan.
-                </figcaption>
-              </figure>
-            ) : null}
           </section>
         ))}
       </div>
