@@ -23,6 +23,12 @@ export default function HobbiesPage() {
       description: "I have been skiing my whole life."
     },
     {
+      title: "Sports",
+      accent: "SP",
+      description:
+        "Beyond soccer, golf, and skiing, I just love sports in general, watching and playing whatever I can."
+    },
+    {
       title: "The Outdoors",
       accent: "OD",
       description:
