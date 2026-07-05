@@ -40,8 +40,8 @@ export default function HobbiesPage() {
     {
       title: "Skiing",
       accent: "SK",
-      image: null,
-      imageAlt: null,
+      image: "/images/ski.jpeg",
+      imageAlt: "Zachary skiing",
       imagePosition: "object-center",
       description: "I have been skiing my whole life."
     },
@@ -81,13 +81,13 @@ export default function HobbiesPage() {
             className="flex h-full flex-col overflow-hidden rounded-lg border border-border bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)]"
           >
             {hobby.image ? (
-              <div className="relative aspect-video w-full border-b border-border">
+              <div className="relative h-44 w-full border-b border-border bg-background">
                 <Image
                   src={hobby.image}
                   alt={hobby.imageAlt ?? hobby.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 384px"
-                  className={`object-cover ${hobby.imagePosition}`}
+                  className={`object-contain ${hobby.imagePosition}`}
                 />
               </div>
             ) : null}
