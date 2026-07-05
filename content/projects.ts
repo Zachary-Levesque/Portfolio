@@ -11,9 +11,9 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Mini Tensor Engine",
-    dateRange: "Jan 2026 – May 2026",
+    dateRange: "Jan 2026 to May 2026",
     description:
-      "C++ inference runtime built to study how tensor layout, matmul kernel design, SIMD, cache locality, threading, and int8 quantization affect CPU inference latency — with every performance claim backed by measured benchmarks, not intuition.",
+      "C++ inference runtime built to study how tensor layout, matmul kernel design, SIMD, cache locality, threading, and int8 quantization affect CPU inference latency. Every performance claim is backed by measured benchmarks, not intuition.",
     metrics: [
       "3.37x speedup over naive baseline at 1024³ matmul via cache-friendly transpose",
       "3.44x additional speedup via int8 quantization at 1024³",
@@ -25,7 +25,7 @@ export const projects: Project[] = [
   },
   {
     title: "Adaptive Market Regime Framework",
-    dateRange: "Aug 2025 – Dec 2025",
+    dateRange: "Aug 2025 to Dec 2025",
     description:
       "Research-grade quantitative trading system detecting market regimes via Hidden Markov Models, blending alpha signals with SPY through a regime-aware allocation policy, backed by a reinforcement learning position-sizing agent and a full React product dashboard.",
     metrics: [
@@ -48,9 +48,9 @@ export const projects: Project[] = [
   },
   {
     title: "Knovara",
-    dateRange: "May 2026 – Present",
+    dateRange: "May 2026 to Present",
     description:
-      "AI-powered technical ramp-up copilot that maps a company's code, docs, projects, decisions, and people so new engineers can become productive faster — turning scattered organizational knowledge into personalized technical mentorship.",
+      "AI-powered technical ramp-up copilot that maps a company's code, docs, projects, decisions, and people so new engineers can become productive faster. It turns scattered organizational knowledge into personalized technical mentorship.",
     metrics: [],
     techStack: [
       "Python",
@@ -66,9 +66,9 @@ export const projects: Project[] = [
   },
   {
     title: "Smart Sensing Seating System (Seets)",
-    dateRange: "Sep 2025 – Present",
+    dateRange: "Sep 2025 to Present",
     description:
-      "IoT smart seating startup product for real-time occupancy tracking and space utilization insights. Piloted at the University of Ottawa Heart Institute — the first live institutional deployment.",
+      "IoT smart seating startup product for real-time occupancy tracking and space utilization insights. Piloted at the University of Ottawa Heart Institute as the first live institutional deployment.",
     metrics: ["Live pilot deployment at the University of Ottawa Heart Institute"],
     techStack: ["FastAPI", "React", "IoT/Embedded Hardware", "PostgreSQL", "Docker"],
     githubUrl: null,
@@ -76,7 +76,7 @@ export const projects: Project[] = [
   },
   {
     title: "Sports Strategy Engine",
-    dateRange: "May 2025 – Sep 2025",
+    dateRange: "May 2025 to Sep 2025",
     description:
       "Full-stack golf decision-analysis platform modeling shot strategy under uncertainty with a Monte Carlo simulation engine and a visual SVG hole editor for defining players, hole geometry, and hazards.",
     metrics: [
@@ -97,7 +97,7 @@ export const projects: Project[] = [
   },
   {
     title: "Real-Time Trading System",
-    dateRange: "Jan 2025 – May 2025",
+    dateRange: "Jan 2025 to May 2025",
     description:
       "Full-stack trading platform ingesting live market data and generating explainable BUY/HOLD/SELL recommendations through a signal-processing layer computing momentum, trend, volatility, and volume indicators.",
     metrics: [],
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     title: "Quantum Math Quest",
     dateRange: "Nov 2025",
     description:
-      "Python desktop quiz game combining adaptive math practice with quantum-random question selection using Qiskit — an Elo-style rating system adjusts difficulty while quantum circuits drive category and question randomness. Built for the 2025 Qiskit Hackathon.",
+      "Python desktop quiz game combining adaptive math practice with quantum-random question selection using Qiskit. An Elo-style rating system adjusts difficulty while quantum circuits drive category and question randomness. Built for the 2025 Qiskit Hackathon.",
     metrics: [],
     techStack: ["Python", "Qiskit", "Tkinter"],
     githubUrl: "https://github.com/Zachary-Levesque/Quantum-Math-Quest",
@@ -135,9 +135,9 @@ export const projects: Project[] = [
   },
   {
     title: "AI Games and Logic Solvers",
-    dateRange: "Sep 2024 – Dec 2024",
+    dateRange: "Sep 2024 to Dec 2024",
     description:
-      "Collection of classical AI systems built from first principles — including a minimax Checkers AI, a Q-learning Nim agent, a constraint-satisfaction Crossword solver, a Minesweeper inference engine, and a PageRank simulation — emphasizing algorithmic thinking over high-level library abstraction.",
+      "Collection of classical AI systems built from first principles, including a minimax Checkers AI, a Q-learning Nim agent, a constraint-satisfaction Crossword solver, a Minesweeper inference engine, and a PageRank simulation. The collection emphasizes algorithmic thinking over high-level library abstraction.",
     metrics: [],
     techStack: ["Python", "PyTorch"],
     githubUrl: "https://github.com/Zachary-Levesque/AI-Games-and-Logic-Solvers",
@@ -145,9 +145,9 @@ export const projects: Project[] = [
   },
   {
     title: "AI Agents and Workflows",
-    dateRange: "Apr 2024 – Jun 2024",
+    dateRange: "Apr 2024 to Jun 2024",
     description:
-      "Collection of AI agent automations built in n8n connecting LLMs to real business tools — appointment scheduling, lead research, LinkedIn content drafting, RAG-based document Q&A, and weather alerts — bridging AI from chat to real action.",
+      "Collection of AI agent automations built in n8n connecting LLMs to real business tools, including appointment scheduling, lead research, LinkedIn content drafting, RAG-based document Q&A, and weather alerts. The project bridges AI from chat to real action.",
     metrics: [],
     techStack: ["n8n", "Python", "RAG", "Pinecone", "Google Workspace APIs"],
     githubUrl: "https://github.com/Zachary-Levesque/AI-agents-workflows",
@@ -155,7 +155,7 @@ export const projects: Project[] = [
   },
   {
     title: "1Chat4You",
-    dateRange: "Jan 2023 – Apr 2023",
+    dateRange: "Jan 2023 to Apr 2023",
     description:
       "Application streamlining communication between landlords and tenants, providing a secure environment for real-time messaging, document sharing, and essential updates.",
     metrics: [],
@@ -165,7 +165,7 @@ export const projects: Project[] = [
   },
   {
     title: "ParaPicture Solutions",
-    dateRange: "Sep 2023 – Dec 2023",
+    dateRange: "Sep 2023 to Dec 2023",
     description:
       "Flexible arm system enabling individuals with limited mobility to independently capture photographs using a diverse range of photographic tools.",
     metrics: [],
