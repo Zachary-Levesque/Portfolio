@@ -5,6 +5,7 @@ type Hobby = {
   accent: string;
   image: string | null;
   imageAlt: string | null;
+  imagePosition: string;
   description: string;
 };
 
@@ -15,6 +16,7 @@ export default function HobbiesPage() {
       accent: "SC",
       image: "/images/soccer.jpg",
       imageAlt: "Zachary playing soccer",
+      imagePosition: "object-top",
       description:
         "I have played soccer since I was four years old, all the way through university. I played for OTFC OPDL, OSU PLSQ, and Louis Riel Soccer."
     },
@@ -23,6 +25,7 @@ export default function HobbiesPage() {
       accent: "GF",
       image: "/images/golf.jpeg",
       imageAlt: "Zachary golfing",
+      imagePosition: "object-bottom",
       description:
         "I started golfing about four years ago and I am still working on my game. I currently play at a 15 handicap."
     },
@@ -31,6 +34,7 @@ export default function HobbiesPage() {
       accent: "GT",
       image: null,
       imageAlt: null,
+      imagePosition: "object-center",
       description: "I started playing guitar six months ago and I love learning it."
     },
     {
@@ -38,6 +42,7 @@ export default function HobbiesPage() {
       accent: "SK",
       image: null,
       imageAlt: null,
+      imagePosition: "object-center",
       description: "I have been skiing my whole life."
     },
     {
@@ -45,6 +50,7 @@ export default function HobbiesPage() {
       accent: "SP",
       image: "/images/sports.jpeg",
       imageAlt: "Zachary at a sports event",
+      imagePosition: "object-bottom",
       description:
         "Beyond soccer, golf, and skiing, I just love sports in general, watching and playing whatever I can."
     },
@@ -53,6 +59,7 @@ export default function HobbiesPage() {
       accent: "OD",
       image: "/images/boating.jpeg",
       imageAlt: "Zachary boating outdoors",
+      imagePosition: "object-center",
       description:
         "I love fishing, boating, being in nature, and spending time outside."
     }
@@ -80,7 +87,7 @@ export default function HobbiesPage() {
                   alt={hobby.imageAlt ?? hobby.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 384px"
-                  className="object-cover"
+                  className={`object-cover ${hobby.imagePosition}`}
                 />
               </div>
             ) : null}
