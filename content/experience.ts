@@ -16,19 +16,38 @@ export const experience: ExperienceEntry[] = [
       "Collaborated with the firmware team, working in C#, to implement and debug embedded firmware supporting protocol validation",
       "Diagnosed and resolved issues across the hardware/firmware boundary, combining hardware configuration, signal analysis, and low-level debugging"
     ],
-    skills: ["Python", "C#", "Embedded Systems", "Hardware Engineering"]
+    skills: [
+      "Hardware Engineering",
+      "Embedded Systems",
+      "Python",
+      "C#",
+      "Linux",
+      "Circuit Design and Analysis"
+    ]
   },
   {
     company: "Seets Inc",
-    role: "Co-Founder & CEO",
+    role: "CEO & Co-Founder",
     dateRange: "May 2026 – Present, Ottawa, ON",
     bullets: [
       "Co-founded an IoT smart seating startup focused on real-time occupancy tracking for institutions",
       "Driving product vision, engineering strategy, system architecture, and technical execution",
       "Building a scalable solution at the intersection of hardware, software, and real-world analytics",
-      "Led first pilot implementation at the University of Ottawa Heart Institute"
+      "Led first pilot deployment at the University of Ottawa Heart Institute"
     ],
-    skills: ["FastAPI", "React.js", "Hardware Engineering", "Product Strategy"]
+    skills: [
+      "FastAPI",
+      "Hardware Engineering",
+      "C++",
+      "C",
+      "Leadership",
+      "PostgreSQL",
+      "Embedded Systems",
+      "Python",
+      "C#",
+      "TypeScript",
+      "Docker"
+    ]
   },
   {
     company: "APRIQuOt",
@@ -39,7 +58,14 @@ export const experience: ExperienceEntry[] = [
       "Used Qiskit for quantum computing to study quantum chaos in complex multi-qubit systems",
       "Implemented and optimized algorithms to improve accuracy"
     ],
-    skills: ["PyTorch", "Quantum Computing", "Python"]
+    skills: [
+      "PyTorch",
+      "Quantum Computing",
+      "Python",
+      "Physics",
+      "Data Analysis",
+      "Machine Learning"
+    ]
   },
   {
     company: "Huawei",
@@ -50,7 +76,13 @@ export const experience: ExperienceEntry[] = [
       "Implemented Python automation for link control and data acquisition, boosting throughput and enhancing results",
       "Employed mathematical models and statistical analysis to extract and interpret critical performance metrics"
     ],
-    skills: ["Python", "MATLAB", "Hardware Engineering"]
+    skills: [
+      "Hardware Engineering",
+      "MATLAB",
+      "Python",
+      "Data Analysis",
+      "Machine Learning"
+    ]
   },
   {
     company: "Thin-Film Electronics Laboratory",
@@ -61,7 +93,13 @@ export const experience: ExperienceEntry[] = [
       "Simulated device behavior using Atlas TCAD software to model thin-film transistor parameters",
       "Used Python and MATLAB to analyze transistor performance and efficiency"
     ],
-    skills: ["Python", "MATLAB", "Hardware Engineering"]
+    skills: [
+      "Hardware Engineering",
+      "MATLAB",
+      "Python",
+      "Electrical Engineering",
+      "Data Analysis"
+    ]
   },
   {
     company: "Hydro Ottawa",
@@ -72,6 +110,28 @@ export const experience: ExperienceEntry[] = [
       "Developed a Java program to transfer data between software applications, improving workflow efficiency",
       "Embedded simple machine-learning models to automate deliverables, project tracking, and budget forecasting"
     ],
-    skills: ["Python", "FastAPI", "Java"]
+    skills: ["FastAPI", "Python", "JavaScript", "Data Analysis"]
+  },
+  {
+    company: "Festival House",
+    role: "Design Engineer",
+    dateRange: "Jun 2022 – Jul 2024, Ottawa, ON",
+    bullets: [
+      "Designed detailed plans and layouts for major events including Bluesfest and Canada Day, supporting large-scale infrastructure deployment",
+      "Applied engineering principles and analytical methods to ensure structural safety, regulatory compliance, and efficient site utilization",
+      "Collaborated with contractors, engineers, and event coordinators to optimize logistics, setup procedures, and resource allocation"
+    ],
+    skills: ["Leadership", "Circuit Design and Analysis"]
+  },
+  {
+    company: "CECCE",
+    role: "Software Engineer",
+    dateRange: "May 2020 – Sep 2020, Ottawa, ON",
+    bullets: [
+      "Created software allowing students to do school work virtually",
+      "Used strong analytical and problem-solving skills to develop effective solutions for challenging situations",
+      "Participated in team projects, demonstrating an ability to work collaboratively and effectively"
+    ],
+    skills: ["FastAPI", "PostgreSQL", "TypeScript"]
   }
 ];
