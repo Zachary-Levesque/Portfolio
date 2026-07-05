@@ -6,19 +6,11 @@ export default function AboutPage() {
     },
     {
       title: "What I do now",
-      body: "I'm currently a Systems Verification Engineer at Ranovus, working across hardware and firmware boundaries on optical communication systems. Alongside that, I'm building Seets, an IoT occupancy-tracking startup I co-founded that's now piloting at the University of Ottawa Heart Institute, and Knovara, an AI-powered onboarding copilot for engineering teams."
-    },
-    {
-      title: "How I work",
-      body: "I move fast without losing rigor. Whether it's optimizing a matrix multiplication kernel or running a company, I want to understand why something works, not just that it does. I'm bilingual (English/French) and based in Ottawa, Canada."
+      body: "I'm currently a Systems Verification Engineer at Ranovus, working across hardware and firmware boundaries on optical communication systems. Alongside that, I'm building Seets, an IoT occupancy-tracking startup I co-founded that's now piloting at the University of Ottawa Heart Institute, and Knovara, an AI-powered onboarding copilot for engineering teams. Whether I'm solving a technical problem or running a company, I want to understand why something works, not just that it does."
     },
     {
       title: "A story",
       body: "In summer 2025, I attended the NCKU Semiconductor Summer School in Taiwan on an International Experience Bursary, diving into Digital IC Design — Verilog coding, transistor-level layout, timing analysis, and synthesis. I finished with the top grade in the course. It sharpened my hands-on understanding of what happens below the software layer, right down to the transistor."
-    },
-    {
-      title: "What's next",
-      body: "I'm graduating in Winter 2027 and looking toward systems engineering or quantitative roles where I can stay close to the fundamentals — the math and the metal — while working on problems with real stakes."
     }
   ];
 
