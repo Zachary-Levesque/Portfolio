@@ -9,12 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0a0a",
-        surface: "#141414",
-        foreground: "#ededed",
-        muted: "#a3a3a3",
-        border: "#262626",
-        accent: "#2dd4bf"
+        background: "#0A0E1A",
+        surface: "#111439",
+        foreground: "#F8F8F9",
+        muted: "#8B92A8",
+        accent: "#00D9FF",
+        "accent-hover": "#00ABE4",
+        border: "#1E2340"
       },
       fontFamily: {
         sans: ["var(--font-sans)", "Arial", "Helvetica", "sans-serif"],
