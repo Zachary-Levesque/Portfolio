@@ -11,7 +11,7 @@ const navItems = [
 
 export function Nav() {
   return (
-    <header className="border-b border-border bg-background">
+    <header className="border-b border-border bg-surface">
       <nav
         className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-4 px-6 py-5 font-mono text-sm"
         aria-label="Main navigation"
@@ -20,7 +20,7 @@ export function Nav() {
           <Link
             key={item.href}
             href={item.href}
-            className="text-muted transition-colors hover:text-foreground"
+            className="text-muted transition-colors hover:text-accent"
           >
             {item.label}
           </Link>
@@ -29,7 +29,7 @@ export function Nav() {
           href="/files/resume.pdf"
           target="_blank"
           rel="noreferrer"
-          className="text-accent transition-colors hover:text-foreground"
+          className="text-accent transition-colors hover:text-accent-hover"
         >
           Resume
         </a>
