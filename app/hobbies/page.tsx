@@ -4,25 +4,29 @@ export default function HobbiesPage() {
       title: "Soccer",
       accent: "SC",
       description:
-        "[FILL IN: your soccer background — played growing up / current league / etc.]. I also coached youth soccer at Ottawa TFC for two years."
+        "I have played soccer since I was four years old, all the way through university. I played for OTFC OPDL, OSU PLSQ, and Louis Riel Soccer."
     },
     {
       title: "Golf",
       accent: "GF",
       description:
-        "[FILL IN: how long you've played, favorite course, handicap if relevant]. It's actually what inspired my Sports Strategy Engine project — a Monte Carlo decision engine for golf strategy optimization."
+        "I started golfing about four years ago and I am still working on my game. I currently play at a 15 handicap."
     },
     {
       title: "Guitar",
       accent: "GT",
-      description:
-        "[FILL IN: how long you've played, genre, electric/acoustic]."
+      description: "I started playing guitar six months ago and I love learning it."
+    },
+    {
+      title: "Skiing",
+      accent: "SK",
+      description: "I have been skiing my whole life."
     },
     {
       title: "The Outdoors",
       accent: "OD",
       description:
-        "[FILL IN: hiking, camping, specific activities or places you go]."
+        "I love fishing, boating, being in nature, and spending time outside."
     }
   ];
 
