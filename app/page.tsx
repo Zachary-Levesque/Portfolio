@@ -13,10 +13,10 @@ export default function HomePage() {
           to software.
         </p>
         <p className="mt-6 leading-7 text-muted">
-          Currently a Systems Verification Engineer at Ranovus, and co-founder
-          of Seets, an IoT occupancy-tracking startup piloting at the University
-          of Ottawa Heart Institute. Graduating Winter 2027, aiming for systems
-          engineering or quantitative roles.
+          Currently a Systems Verification Engineer at Ranovus, and CEO and
+          co-founder of Seets, an IoT occupancy-tracking startup piloting at the
+          University of Ottawa Heart Institute. Graduating Winter 2027, aiming
+          for systems engineering or quantitative roles.
         </p>
         <div className="mt-8 flex flex-wrap gap-3 font-mono text-sm">
           <Link
