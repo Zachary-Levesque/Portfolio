@@ -4,6 +4,8 @@
 
 :root {
   color-scheme: dark;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: Menlo, Monaco, Consolas, monospace;
 }
 
 * {
