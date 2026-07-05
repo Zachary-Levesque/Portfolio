@@ -1,18 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans"
-});
-
-const jetBrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono"
-});
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -25,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable}`}>
+    <html lang="en">
       <body>
         <div className="flex min-h-screen flex-col">
           <Nav />
