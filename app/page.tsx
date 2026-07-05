@@ -17,11 +17,12 @@ export default function HomePage() {
   return (
     <div className="space-y-20">
       <section className="grid gap-10 py-10 md:grid-cols-[1.3fr_0.7fr] md:items-end">
-        <div>
+        <div className="relative">
+          <div className="pointer-events-none absolute -left-10 top-8 h-48 w-72 rounded-full bg-accent/15 blur-3xl" />
           <p className="font-mono text-sm uppercase text-accent">
             Systems engineering / quant-track portfolio
           </p>
-          <h1 className="mt-5 max-w-4xl font-mono text-5xl font-semibold leading-tight text-foreground md:text-7xl">
+          <h1 className="relative mt-5 max-w-4xl font-mono text-5xl font-semibold leading-tight text-foreground md:text-7xl">
             Zachary Levesque
           </h1>
           <p className="mt-5 max-w-3xl text-xl leading-8 text-foreground">
@@ -37,7 +38,7 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-sm">
             <Link
               href="/projects"
-              className="rounded border border-accent bg-accent px-4 py-2 text-background transition-colors hover:border-foreground hover:bg-foreground"
+              className="rounded border border-accent bg-accent px-4 py-2 text-background transition-colors hover:border-accent-hover hover:bg-accent-hover"
             >
               View Projects
             </Link>
@@ -68,7 +69,7 @@ export default function HomePage() {
           </div>
           <Link
             href="/projects"
-            className="font-mono text-sm text-accent transition-colors hover:text-foreground"
+            className="font-mono text-sm text-accent transition-colors hover:text-accent-hover"
           >
             All projects
           </Link>
