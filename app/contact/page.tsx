@@ -16,7 +16,7 @@ export default function ContactPage() {
           Let&apos;s connect
         </h1>
         <p className="mt-4 leading-7 text-muted">
-          I&apos;d love to learn more about you — feel free to reach out.
+          I&apos;d love to learn more about you. Feel free to reach out.
         </p>
       </section>
 
