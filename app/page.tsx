@@ -22,16 +22,22 @@ export default function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-sm">
             <Link
-              href="/projects"
+              href="/about"
               className="rounded border border-accent bg-accent px-4 py-2 text-background transition-colors hover:border-accent-hover hover:bg-accent-hover"
             >
-              View Projects
+              About Me
             </Link>
             <Link
-              href="/about"
+              href="/experience"
               className="rounded border border-border px-4 py-2 text-foreground transition-colors hover:border-accent hover:text-accent"
             >
-              About Me
+              View Experience
+            </Link>
+            <Link
+              href="/projects"
+              className="rounded border border-border px-4 py-2 text-foreground transition-colors hover:border-accent hover:text-accent"
+            >
+              View Projects
             </Link>
           </div>
         </div>
