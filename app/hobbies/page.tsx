@@ -16,7 +16,7 @@ export default function HobbiesPage() {
       accent: "SC",
       image: "/images/soccer.jpg",
       imageAlt: "Zachary playing soccer",
-      imagePosition: "object-top",
+      imagePosition: "object-[50%_18%]",
       description:
         "I have played soccer since I was four years old, all the way through university. I played for OTFC OPDL, OSU PLSQ, and Louis Riel Soccer."
     },
@@ -25,7 +25,7 @@ export default function HobbiesPage() {
       accent: "GF",
       image: "/images/golf.jpeg",
       imageAlt: "Zachary golfing",
-      imagePosition: "object-bottom",
+      imagePosition: "object-[50%_65%]",
       description:
         "I started golfing about four years ago and I am still working on my game. I currently play at a 15 handicap."
     },
@@ -42,7 +42,7 @@ export default function HobbiesPage() {
       accent: "SK",
       image: "/images/ski.jpeg",
       imageAlt: "Zachary skiing",
-      imagePosition: "object-center",
+      imagePosition: "object-[50%_40%]",
       description: "I have been skiing my whole life."
     },
     {
@@ -50,7 +50,7 @@ export default function HobbiesPage() {
       accent: "SP",
       image: "/images/sports.jpeg",
       imageAlt: "Zachary at a sports event",
-      imagePosition: "object-bottom",
+      imagePosition: "object-[50%_70%]",
       description:
         "Beyond soccer, golf, and skiing, I just love sports in general, watching and playing whatever I can."
     },
@@ -59,7 +59,7 @@ export default function HobbiesPage() {
       accent: "OD",
       image: "/images/boating.jpeg",
       imageAlt: "Zachary boating outdoors",
-      imagePosition: "object-center",
+      imagePosition: "object-[50%_45%]",
       description:
         "I love fishing, boating, being in nature, and spending time outside."
     }
@@ -78,7 +78,7 @@ export default function HobbiesPage() {
         {hobbies.map((hobby) => (
           <article
             key={hobby.title}
-            className="grid overflow-hidden rounded-lg border border-border bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)] md:grid-cols-[1fr_340px]"
+            className="grid overflow-hidden rounded-lg border border-border bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)] md:grid-cols-[1fr_320px]"
           >
             <div className="flex flex-col p-5">
               <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-accent/25 bg-accent/10 font-mono text-sm text-accent">
@@ -92,13 +92,13 @@ export default function HobbiesPage() {
               </p>
             </div>
             {hobby.image ? (
-              <div className="relative min-h-[28rem] border-t border-border bg-background md:min-h-[32rem] md:border-l md:border-t-0">
+              <div className="relative aspect-[4/5] border-t border-border bg-background md:aspect-auto md:min-h-[24rem] md:border-l md:border-t-0">
                 <Image
                   src={hobby.image}
                   alt={hobby.imageAlt ?? hobby.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, 340px"
-                  className={`object-contain ${hobby.imagePosition}`}
+                  sizes="(max-width: 768px) 100vw, 320px"
+                  className={`object-cover ${hobby.imagePosition}`}
                 />
               </div>
             ) : null}
