@@ -4,13 +4,13 @@ import { experience } from "@/content/experience";
 export default function ExperiencePage() {
   return (
     <div className="space-y-10">
-      <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-border bg-surface">
+      <div className="relative mx-auto aspect-[16/9] max-w-3xl overflow-hidden rounded-lg border border-border bg-surface">
         <Image
           src="/images/experience.jpeg"
           alt="Zachary in a professional experience setting"
           fill
           priority
-          sizes="(max-width: 768px) 100vw, 1152px"
+          sizes="(max-width: 768px) 100vw, 768px"
           className="object-cover"
         />
       </div>
