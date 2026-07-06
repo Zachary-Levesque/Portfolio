@@ -5,7 +5,7 @@ import { projects } from "@/content/projects";
 export default function ProjectsPage() {
   return (
     <div className="space-y-10">
-      <figure className="max-w-3xl">
+      <figure className="mx-auto max-w-3xl text-center">
         <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-border bg-surface">
           <Image
             src="/images/presenting-seets.jpg"
@@ -22,7 +22,7 @@ export default function ProjectsPage() {
         </figcaption>
       </figure>
 
-      <section className="max-w-3xl">
+      <section className="mx-auto max-w-3xl text-center">
         <p className="font-mono text-sm uppercase text-accent">Work</p>
         <h1 className="mt-3 font-mono text-4xl font-semibold">Projects</h1>
         <p className="mt-4 leading-7 text-muted">
