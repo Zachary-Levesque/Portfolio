@@ -1,20 +1,8 @@
-import Image from "next/image";
 import { experience } from "@/content/experience";
 
 export default function ExperiencePage() {
   return (
     <div className="space-y-10">
-      <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-lg border border-border bg-surface">
-        <Image
-          src="/images/experience.jpeg"
-          alt="Zachary in a professional experience setting"
-          fill
-          priority
-          sizes="(max-width: 768px) 100vw, 384px"
-          className="object-cover"
-        />
-      </div>
-
       <section className="max-w-3xl">
         <p className="font-mono text-sm uppercase text-accent">Timeline</p>
         <h1 className="mt-3 font-mono text-4xl font-semibold">Experience</h1>
