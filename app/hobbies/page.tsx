@@ -78,7 +78,7 @@ export default function HobbiesPage() {
         {hobbies.map((hobby) => (
           <article
             key={hobby.title}
-            className="grid overflow-hidden rounded-lg border border-border bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)] md:grid-cols-[1fr_220px]"
+            className="grid overflow-hidden rounded-lg border border-border bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)] md:grid-cols-[1fr_340px]"
           >
             <div className="flex flex-col p-5">
               <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-accent/25 bg-accent/10 font-mono text-sm text-accent">
@@ -92,12 +92,12 @@ export default function HobbiesPage() {
               </p>
             </div>
             {hobby.image ? (
-              <div className="relative min-h-72 border-t border-border bg-background md:min-h-full md:border-l md:border-t-0">
+              <div className="relative min-h-[28rem] border-t border-border bg-background md:min-h-[32rem] md:border-l md:border-t-0">
                 <Image
                   src={hobby.image}
                   alt={hobby.imageAlt ?? hobby.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, 220px"
+                  sizes="(max-width: 768px) 100vw, 340px"
                   className={`object-contain ${hobby.imagePosition}`}
                 />
               </div>
