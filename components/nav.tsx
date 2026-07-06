@@ -25,14 +25,6 @@ export function Nav() {
             {item.label}
           </Link>
         ))}
-        <a
-          href="/files/resume.pdf"
-          target="_blank"
-          rel="noreferrer"
-          className="text-accent transition-colors hover:text-accent-hover"
-        >
-          Resume
-        </a>
       </nav>
     </header>
   );
