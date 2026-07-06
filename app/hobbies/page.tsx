@@ -25,7 +25,7 @@ export default function HobbiesPage() {
       accent: "GF",
       image: "/images/golf.jpeg",
       imageAlt: "Zachary golfing",
-      imagePosition: "object-[50%_65%]",
+      imagePosition: "object-[50%_78%]",
       description:
         "I started golfing about four years ago and I am still working on my game. I currently play at a 15 handicap."
     },
