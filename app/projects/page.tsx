@@ -5,16 +5,22 @@ import { projects } from "@/content/projects";
 export default function ProjectsPage() {
   return (
     <div className="space-y-10">
-      <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-border bg-surface">
-        <Image
-          src="/images/presenting-seets.jpg"
-          alt="Zachary presenting Seets"
-          fill
-          priority
-          sizes="(max-width: 768px) 100vw, 1152px"
-          className="object-cover"
-        />
-      </div>
+      <figure className="max-w-3xl">
+        <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-border bg-surface">
+          <Image
+            src="/images/presenting-seets.jpg"
+            alt="Zachary pitching Seets"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="object-cover"
+          />
+        </div>
+        <figcaption className="mt-2 font-mono text-xs text-muted">
+          Pitching the project that turned into Seets, an IoT occupancy tracking
+          business.
+        </figcaption>
+      </figure>
 
       <section className="max-w-3xl">
         <p className="font-mono text-sm uppercase text-accent">Work</p>
