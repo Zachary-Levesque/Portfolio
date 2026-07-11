@@ -25,7 +25,7 @@ export default function ExperiencePage() {
               <ul className="mt-5 space-y-3 text-sm leading-6 text-muted">
                 {entry.bullets.map((bullet) => (
                   <li key={bullet} className="pl-4">
-                    <span className="-ml-4 text-accent-muted">- </span>
+                    <span className="-ml-4 text-red-muted">- </span>
                     {bullet}
                   </li>
                 ))}
