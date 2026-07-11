@@ -11,7 +11,7 @@ export default function ContactPage() {
   return (
     <div className="max-w-3xl space-y-8">
       <section>
-        <p className="font-mono text-sm uppercase text-accent-muted">Contact</p>
+        <p className="font-mono text-sm uppercase text-red-muted">Contact</p>
         <h1 className="mt-3 font-mono text-4xl font-semibold text-foreground">
           Let&apos;s connect
         </h1>
@@ -33,7 +33,7 @@ export default function ContactPage() {
           <a
             key={link.href}
             href={link.href}
-            className="block rounded-2xl border border-accent-border bg-surface-blue px-5 py-4 text-accent transition-colors hover:bg-accent-soft hover:text-accent-hover"
+            className="block rounded-2xl border border-red-border bg-surface-blue px-5 py-4 text-accent transition-colors hover:bg-red-soft hover:text-red"
           >
             {link.label}
           </a>
