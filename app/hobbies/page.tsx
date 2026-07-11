@@ -68,7 +68,7 @@ export default function HobbiesPage() {
   return (
     <div className="space-y-10">
       <section className="max-w-3xl">
-        <p className="font-mono text-sm uppercase text-accent">Outside work</p>
+        <p className="font-mono text-sm uppercase text-accent-muted">Outside work</p>
         <h1 className="mt-3 font-mono text-4xl font-semibold text-foreground">
           Hobbies
         </h1>
@@ -78,10 +78,10 @@ export default function HobbiesPage() {
         {hobbies.map((hobby) => (
           <article
             key={hobby.title}
-            className="grid overflow-hidden rounded-lg border border-border bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)] md:grid-cols-[1fr_320px]"
+            className="grid overflow-hidden rounded-3xl border border-border bg-surface transition-colors hover:border-accent-border md:grid-cols-[1fr_320px]"
           >
-            <div className="flex flex-col p-5">
-              <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-accent/25 bg-accent/10 font-mono text-sm text-accent">
+            <div className="flex flex-col p-6">
+              <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-accent-border bg-accent-soft font-mono text-sm text-accent-muted">
                 {hobby.accent}
               </div>
               <h2 className="font-mono text-xl font-semibold text-foreground">
