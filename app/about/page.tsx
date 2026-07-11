@@ -8,7 +8,7 @@ export default function AboutPage() {
     },
     {
       title: "What I do now",
-      body: "I'm currently a Systems Verification Engineer at Ranovus, working across hardware and firmware boundaries on optical communication systems. Alongside that, I'm building Seets, an IoT occupancy tracking startup I co founded that's now piloting at the University of Ottawa Heart Institute, and Knovara, an AI powered onboarding copilot for engineering teams. Whether I'm solving a technical problem or running a company, I want to understand why something works, not just that it does."
+      body: "I'm currently a Systems Verification Engineer at Ranovus, working across hardware and firmware boundaries to implement and validate communication protocols like I2C and SPI. Alongside that, I'm building Seets, an IoT occupancy tracking startup I co founded that's now piloting at the University of Ottawa Heart Institute, and Knovara, an AI powered onboarding copilot for engineering teams. Whether I'm solving a technical problem or running a company, I want to understand why something works, not just that it does."
     },
     {
       title: "A story",
