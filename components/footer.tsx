@@ -12,7 +12,7 @@ export function Footer() {
           <a
             key={link.label}
             href={link.href}
-            className="transition-colors hover:text-foreground"
+            className="transition-colors hover:text-accent"
           >
             {link.label}
           </a>
