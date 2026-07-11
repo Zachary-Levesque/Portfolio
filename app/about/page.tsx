@@ -19,14 +19,14 @@ export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl space-y-14">
       <figure>
-        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-accent-border bg-surface">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-accent-border bg-surface-blue p-2">
           <Image
             src="/images/taiwan.jpeg"
             alt="Zachary at NCKU Semiconductor Summer School in Taiwan"
             fill
             priority
             sizes="(max-width: 768px) 100vw, 768px"
-            className="object-cover"
+            className="rounded-[1.25rem] object-cover"
           />
         </div>
         <figcaption className="mt-2 font-mono text-xs text-muted">
@@ -38,7 +38,7 @@ export default function AboutPage() {
         {sections.map((section, index) => (
           <section
             key={section.title}
-            className="space-y-3 border-t border-accent-border pt-7"
+            className="space-y-3 rounded-3xl border border-accent-border bg-surface p-6"
           >
             <h2 className="font-mono text-xl font-semibold text-accent-muted">
               {section.title}
