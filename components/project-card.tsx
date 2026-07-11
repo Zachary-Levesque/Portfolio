@@ -32,7 +32,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
       </p>
 
       {topMetric ? (
-        <p className="mt-4 border-l-2 border-accent-border pl-3 font-mono text-sm text-accent-muted">
+        <p className="mt-4 border-l-2 border-red-border pl-3 font-mono text-sm text-red-muted">
           {topMetric}
         </p>
       ) : null}
