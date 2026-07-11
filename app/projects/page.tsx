@@ -23,7 +23,7 @@ export default function ProjectsPage() {
       </figure>
 
       <section className="mx-auto max-w-3xl text-center">
-        <p className="font-mono text-sm uppercase text-accent-muted">Work</p>
+        <p className="font-mono text-sm uppercase text-red-muted">Work</p>
         <h1 className="mt-3 font-mono text-4xl font-semibold">Projects</h1>
         <p className="mt-4 leading-7 text-muted">
           Systems projects across machine learning infrastructure, quantitative
