@@ -9,17 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#F2F7FF",
+        background: "#EEF6FF",
         surface: "#FFFFFF",
         "surface-raised": "#F7FBFF",
-        "surface-blue": "#EAF3FF",
+        "surface-blue": "#E3F0FF",
         foreground: "#1D1D1F",
         muted: "#6E6E73",
-        accent: "#0057B8",
-        "accent-hover": "#003F87",
-        "accent-soft": "#DCEEFF",
-        "accent-border": "#8EC5FF",
-        "accent-muted": "#2468A8",
+        accent: "#004FB3",
+        "accent-hover": "#003B85",
+        "accent-soft": "#D6EAFE",
+        "accent-border": "#7CB8F7",
+        "accent-muted": "#1E5E9F",
+        red: "#C41E3A",
+        "red-hover": "#991B30",
+        "red-soft": "#FFE8EC",
+        "red-border": "#F3A7B5",
+        "red-muted": "#A73448",
         border: "#C7D8EA"
       },
       fontFamily: {
