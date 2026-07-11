@@ -2,12 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
+  const highlights = [
+    "Systems verification",
+    "Embedded protocols",
+    "Startup builder"
+  ];
+
   return (
-    <section className="relative flex min-h-[60vh] items-center py-12">
-      <div className="grid w-full gap-10 md:grid-cols-[1fr_320px] md:items-center">
-        <div className="relative max-w-3xl">
-          <div className="pointer-events-none absolute -left-10 top-8 h-48 w-72 rounded-full bg-accent/15 blur-3xl" />
-          <h1 className="relative font-mono text-5xl font-semibold leading-tight text-foreground md:text-7xl">
+    <section className="flex min-h-[65vh] items-center py-16">
+      <div className="grid w-full gap-10 md:grid-cols-[1fr_340px] md:items-center">
+        <div className="max-w-3xl">
+          <h1 className="font-mono text-5xl font-semibold leading-tight text-foreground md:text-7xl">
             Zachary Levesque
           </h1>
           <p className="mt-5 text-xl leading-8 text-foreground">
@@ -20,29 +25,39 @@ export default function HomePage() {
             the University of Ottawa Heart Institute. Graduating Winter 2027,
             aiming for systems engineering or quantitative roles.
           </p>
+          <div className="mt-6 flex flex-wrap gap-2 font-mono text-xs">
+            {highlights.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-accent-border bg-accent-soft px-3 py-1.5 text-accent-muted"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-sm">
             <Link
               href="/about"
-              className="rounded border border-accent bg-accent px-4 py-2 text-background transition-colors hover:border-accent-hover hover:bg-accent-hover"
+              className="rounded-full border border-accent bg-accent px-5 py-2.5 text-surface transition-colors hover:border-accent-hover hover:bg-accent-hover"
             >
               About Me
             </Link>
             <Link
               href="/experience"
-              className="rounded border border-border px-4 py-2 text-foreground transition-colors hover:border-accent hover:text-accent"
+              className="rounded-full border border-accent-border bg-surface px-5 py-2.5 text-accent transition-colors hover:border-accent hover:bg-accent-soft"
             >
               View Experience
             </Link>
             <Link
               href="/projects"
-              className="rounded border border-border px-4 py-2 text-foreground transition-colors hover:border-accent hover:text-accent"
+              className="rounded-full border border-accent-border bg-surface px-5 py-2.5 text-accent transition-colors hover:border-accent hover:bg-accent-soft"
             >
               View Projects
             </Link>
           </div>
         </div>
 
-        <div className="relative aspect-[4/5] w-full max-w-80 overflow-hidden rounded-lg border border-border bg-surface">
+        <div className="relative aspect-[4/5] w-full max-w-80 overflow-hidden rounded-3xl border border-accent-border bg-surface">
           <Image
             src="/images/professional.jpeg"
             alt="Professional portrait of Zachary Levesque"
