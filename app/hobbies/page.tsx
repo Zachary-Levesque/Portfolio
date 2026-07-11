@@ -81,7 +81,7 @@ export default function HobbiesPage() {
             className="grid overflow-hidden rounded-3xl border border-accent-border bg-surface transition-colors hover:bg-surface-blue md:grid-cols-[1fr_320px]"
           >
             <div className="flex flex-col p-6">
-              <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-accent-border bg-accent-soft font-mono text-sm text-accent-muted">
+              <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-red-border bg-red-soft font-mono text-sm text-red-muted">
                 {hobby.accent}
               </div>
               <h2 className="font-mono text-xl font-semibold text-foreground">
