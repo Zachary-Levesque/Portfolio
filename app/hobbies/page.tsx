@@ -78,7 +78,7 @@ export default function HobbiesPage() {
         {hobbies.map((hobby) => (
           <article
             key={hobby.title}
-            className="grid overflow-hidden rounded-3xl border border-border bg-surface transition-colors hover:border-accent-border md:grid-cols-[1fr_320px]"
+            className="grid overflow-hidden rounded-3xl border border-accent-border bg-surface transition-colors hover:bg-surface-blue md:grid-cols-[1fr_320px]"
           >
             <div className="flex flex-col p-6">
               <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-accent-border bg-accent-soft font-mono text-sm text-accent-muted">
