@@ -13,7 +13,7 @@ export function Nav() {
   return (
     <header className="border-b border-border bg-surface">
       <nav
-        className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-4 px-6 py-5 font-mono text-sm"
+        className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-6 px-6 py-5 font-mono text-sm"
         aria-label="Main navigation"
       >
         {navItems.map((item) => (
