@@ -6,14 +6,14 @@ export default function ProjectsPage() {
   return (
     <div className="space-y-10">
       <figure className="mx-auto max-w-3xl text-center">
-        <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-accent-border bg-surface">
+        <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-accent-border bg-surface-blue p-2">
           <Image
             src="/images/presenting-seets.jpg"
             alt="Zachary pitching Seets"
             fill
             priority
             sizes="(max-width: 768px) 100vw, 768px"
-            className="object-cover"
+            className="rounded-[1.25rem] object-cover"
           />
         </div>
         <figcaption className="mt-2 font-mono text-xs text-muted">
