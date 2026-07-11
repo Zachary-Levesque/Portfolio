@@ -9,7 +9,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   const topMetric = project.metrics[0];
 
   return (
-    <article className="flex h-full flex-col rounded-3xl border border-border bg-surface p-6 transition-colors hover:border-accent-border">
+    <article className="flex h-full flex-col rounded-3xl border border-accent-border bg-surface p-6 transition-colors hover:bg-surface-blue">
       <div className="mb-4 flex items-start justify-between gap-4">
         <div>
           <p className="font-mono text-xs uppercase text-muted">
