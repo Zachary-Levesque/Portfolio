@@ -18,7 +18,7 @@ export default function HobbiesPage() {
       imageAlt: "Zachary playing soccer",
       imagePosition: "object-[50%_18%]",
       description:
-        "I have played soccer since I was four years old, all the way through university. I played for OTFC OPDL, OSU PLSQ, and Louis Riel Soccer."
+        "I have played soccer since I was four years old, all the way through university. I played for OTFC OPDL, OSU PLSQ, and Louis Riel Soccer, and I was always captain of my teams. Soccer helped shape me as a leader, a skill I still carry today."
     },
     {
       title: "Golf",
