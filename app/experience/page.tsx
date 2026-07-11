@@ -12,7 +12,7 @@ export default function ExperiencePage() {
         {experience.map((entry) => (
           <article key={`${entry.company}-${entry.role}`} className="relative">
             <p className="font-mono text-sm text-muted">{entry.dateRange}</p>
-            <div className="mt-2 rounded-3xl border border-border bg-surface p-6 transition-colors hover:border-accent-border">
+            <div className="mt-2 rounded-3xl border border-accent-border bg-surface p-6 transition-colors hover:bg-surface-blue">
               <div className="flex flex-wrap items-baseline justify-between gap-3">
                 <div>
                   <h2 className="font-mono text-2xl font-semibold text-foreground">
