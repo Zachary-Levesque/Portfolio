@@ -33,7 +33,7 @@ export default function ContactPage() {
           <a
             key={link.href}
             href={link.href}
-            className="block rounded-2xl border border-accent-border bg-surface px-5 py-4 text-accent transition-colors hover:bg-accent-soft hover:text-accent-hover"
+            className="block rounded-2xl border border-accent-border bg-surface-blue px-5 py-4 text-accent transition-colors hover:bg-accent-soft hover:text-accent-hover"
           >
             {link.label}
           </a>
