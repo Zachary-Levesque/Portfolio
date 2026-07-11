@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <section className="flex min-h-[65vh] items-center py-16">
       <div className="grid w-full gap-10 md:grid-cols-[1fr_340px] md:items-center">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl rounded-3xl border border-accent-border bg-surface p-8">
           <h1 className="font-mono text-5xl font-semibold leading-tight text-foreground md:text-7xl">
             Zachary Levesque
           </h1>
@@ -57,14 +57,14 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="relative aspect-[4/5] w-full max-w-80 overflow-hidden rounded-3xl border border-accent-border bg-surface">
+        <div className="relative aspect-[4/5] w-full max-w-80 overflow-hidden rounded-3xl border border-accent-border bg-surface-blue p-2">
           <Image
             src="/images/professional.jpeg"
             alt="Professional portrait of Zachary Levesque"
             fill
             priority
             sizes="(max-width: 768px) 100vw, 320px"
-            className="object-cover"
+            className="rounded-[1.25rem] object-cover"
           />
         </div>
       </div>
