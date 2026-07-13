@@ -10,19 +10,6 @@ import {
 } from "react";
 import type { ReactNode } from "react";
 
-type ViewTransitionLike = {
-  finished: Promise<void>;
-  skipTransition: () => void;
-};
-
-declare global {
-  interface Document {
-    startViewTransition?: (
-      callback: () => void | Promise<void>
-    ) => ViewTransitionLike;
-  }
-}
-
 type ViewTransitionContextValue = {
   navigate: (href: string) => void;
 };
@@ -38,7 +25,7 @@ export function ViewTransitionProvider({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const pendingNavigation = useRef<(() => void) | null>(null);
-  const activeTransition = useRef<ViewTransitionLike | null>(null);
+  const activeTransition = useRef<ViewTransition | null>(null);
 
   useEffect(() => {
     pendingNavigation.current?.();
@@ -47,7 +34,7 @@ export function ViewTransitionProvider({ children }: { children: ReactNode }) {
 
   const navigate = useCallback(
     (href: string) => {
-      if (!document.startViewTransition || prefersReducedMotion()) {
+      if (!("startViewTransition" in document) || prefersReducedMotion()) {
         router.push(href);
         return;
       }
