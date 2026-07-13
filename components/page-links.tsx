@@ -17,7 +17,7 @@ export function PageLinks() {
   const pathname = usePathname();
   const currentIndex = pages.findIndex((page) => page.href === pathname);
 
-  if (currentIndex === -1) {
+  if (currentIndex <= 0) {
     return null;
   }
 
