@@ -2,7 +2,6 @@ import Image from "next/image";
 
 type Hobby = {
   title: string;
-  accent: string;
   image: string | null;
   imageAlt: string | null;
   imagePosition: string;
@@ -13,7 +12,6 @@ export default function HobbiesPage() {
   const hobbies: Hobby[] = [
     {
       title: "Soccer",
-      accent: "SC",
       image: "/images/soccer.jpg",
       imageAlt: "Zachary playing soccer",
       imagePosition: "object-[50%_18%]",
@@ -22,7 +20,6 @@ export default function HobbiesPage() {
     },
     {
       title: "Golf",
-      accent: "GF",
       image: "/images/golf.jpeg",
       imageAlt: "Zachary golfing",
       imagePosition: "object-[50%_78%]",
@@ -31,7 +28,6 @@ export default function HobbiesPage() {
     },
     {
       title: "Guitar",
-      accent: "GT",
       image: null,
       imageAlt: null,
       imagePosition: "object-center",
@@ -40,7 +36,6 @@ export default function HobbiesPage() {
     },
     {
       title: "Skiing",
-      accent: "SK",
       image: "/images/ski.jpeg",
       imageAlt: "Zachary skiing",
       imagePosition: "object-[50%_40%]",
@@ -49,7 +44,6 @@ export default function HobbiesPage() {
     },
     {
       title: "Sports",
-      accent: "SP",
       image: "/images/sports.jpeg",
       imageAlt: "Zachary at a sports event",
       imagePosition: "object-[50%_70%]",
@@ -58,7 +52,6 @@ export default function HobbiesPage() {
     },
     {
       title: "The Outdoors",
-      accent: "OD",
       image: "/images/boating.jpeg",
       imageAlt: "Zachary boating outdoors",
       imagePosition: "object-[50%_45%]",
@@ -77,14 +70,14 @@ export default function HobbiesPage() {
       </section>
 
       <section className="space-y-5">
-        {hobbies.map((hobby) => (
+        {hobbies.map((hobby, index) => (
           <article
             key={hobby.title}
             className="grid overflow-hidden rounded-3xl border border-accent-border bg-surface transition-colors hover:bg-surface-blue md:grid-cols-[1fr_320px]"
           >
             <div className="flex flex-col p-6">
               <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-red-border bg-red-soft font-mono text-sm text-red-muted">
-                {hobby.accent}
+                {String(index + 1).padStart(2, "0")}
               </div>
               <h2 className="font-mono text-xl font-semibold text-foreground">
                 {hobby.title}
