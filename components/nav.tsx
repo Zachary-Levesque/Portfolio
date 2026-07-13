@@ -1,4 +1,4 @@
-import { TransitionLink } from "@/components/transition-link";
+import Link from "next/link";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -18,13 +18,13 @@ export function Nav() {
         aria-label="Main navigation"
       >
         {navItems.map((item) => (
-          <TransitionLink
+          <Link
             key={item.href}
             href={item.href}
             className="text-muted transition-colors hover:text-accent"
           >
             {item.label}
-          </TransitionLink>
+          </Link>
         ))}
       </nav>
     </header>
