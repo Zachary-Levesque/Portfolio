@@ -73,8 +73,6 @@ export const skillGroups: SkillGroup[] = [
       "Data Analysis",
       "Problem Solving",
       "Leadership",
-      "Cross-Functional Collaboration",
-      "Quantitative Finance",
       "Bilingual: French & English"
     ]
   }
