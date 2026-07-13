@@ -6,7 +6,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-accent-border bg-surface-blue">
+    <footer className="site-footer border-t border-accent-border bg-surface-blue">
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-4 px-6 py-5 text-sm text-muted">
         {footerLinks.map((link) => (
           <a
