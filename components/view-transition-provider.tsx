@@ -14,11 +14,33 @@ type ViewTransitionContextValue = {
   navigate: (href: string) => void;
 };
 
+const routeOrder = [
+  "/",
+  "/about",
+  "/experience",
+  "/education",
+  "/projects",
+  "/skills",
+  "/hobbies",
+  "/contact"
+];
+
 const ViewTransitionContext =
   createContext<ViewTransitionContextValue | null>(null);
 
 function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+function getTransitionDirection(from: string, to: string) {
+  const fromIndex = routeOrder.indexOf(from);
+  const toIndex = routeOrder.indexOf(to);
+
+  if (fromIndex === -1 || toIndex === -1) {
+    return "forward";
+  }
+
+  return toIndex >= fromIndex ? "forward" : "backward";
 }
 
 export function ViewTransitionProvider({ children }: { children: ReactNode }) {
@@ -34,6 +56,9 @@ export function ViewTransitionProvider({ children }: { children: ReactNode }) {
 
   const navigate = useCallback(
     (href: string) => {
+      document.documentElement.dataset.transitionDirection =
+        getTransitionDirection(pathname, href);
+
       if (
         typeof document.startViewTransition !== "function" ||
         prefersReducedMotion()
@@ -61,7 +86,7 @@ export function ViewTransitionProvider({ children }: { children: ReactNode }) {
         }
       });
     },
-    [router]
+    [pathname, router]
   );
 
   return (
