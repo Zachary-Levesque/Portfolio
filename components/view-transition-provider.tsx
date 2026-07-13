@@ -6,6 +6,7 @@ import {
   useCallback,
   useContext,
   useEffect,
+  useLayoutEffect,
   useRef
 } from "react";
 import type { ReactNode } from "react";
@@ -47,23 +48,50 @@ export function ViewTransitionProvider({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const pendingNavigation = useRef<(() => void) | null>(null);
+  const pendingScrollToTop = useRef(false);
   const activeTransition = useRef<ViewTransition | null>(null);
 
+  useLayoutEffect(() => {
+    if (!pendingScrollToTop.current) {
+      return;
+    }
+
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   useEffect(() => {
+    if (pendingScrollToTop.current) {
+      window.scrollTo(0, 0);
+    }
+
     pendingNavigation.current?.();
     pendingNavigation.current = null;
+
+    if (!pendingScrollToTop.current) {
+      return;
+    }
+
+    const frame = requestAnimationFrame(() => {
+      window.scrollTo(0, 0);
+      pendingScrollToTop.current = false;
+    });
+
+    return () => {
+      cancelAnimationFrame(frame);
+    };
   }, [pathname]);
 
   const navigate = useCallback(
     (href: string) => {
       document.documentElement.dataset.transitionDirection =
         getTransitionDirection(pathname, href);
+      pendingScrollToTop.current = true;
 
       if (
         typeof document.startViewTransition !== "function" ||
         prefersReducedMotion()
       ) {
-        router.push(href);
+        router.push(href, { scroll: false });
         return;
       }
 
@@ -75,7 +103,7 @@ export function ViewTransitionProvider({ children }: { children: ReactNode }) {
         () =>
           new Promise<void>((resolve) => {
             pendingNavigation.current = resolve;
-            router.push(href);
+            router.push(href, { scroll: false });
           })
       );
 
