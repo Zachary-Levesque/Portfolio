@@ -32,9 +32,9 @@ export default function EducationPage() {
 
             <ul className="mt-5 space-y-3 text-sm leading-6 text-muted">
               {entry.bullets.map((bullet) => (
-                <li key={bullet} className="pl-4">
-                  <span className="-ml-4 text-red-muted">- </span>
-                  {bullet}
+                <li key={bullet} className="flex gap-2">
+                  <span className="shrink-0 text-red-muted">-</span>
+                  <span>{bullet}</span>
                 </li>
               ))}
             </ul>
@@ -83,9 +83,9 @@ export default function EducationPage() {
               ) : null}
               <ul className="mt-4 space-y-2 text-sm leading-6 text-muted">
                 {award.bullets.map((bullet) => (
-                  <li key={bullet} className="pl-4">
-                    <span className="-ml-4 text-red-muted">- </span>
-                    {bullet}
+                  <li key={bullet} className="flex gap-2">
+                    <span className="shrink-0 text-red-muted">-</span>
+                    <span>{bullet}</span>
                   </li>
                 ))}
               </ul>
