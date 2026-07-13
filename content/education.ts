@@ -46,7 +46,7 @@ export const education: EducationEntry[] = [
     credential: "Ontario Secondary School Diploma (OSSD)",
     dateRange: "Aug 2016 to Jun 2022",
     bullets: [
-      "Graduated high school with an academic average of 98%",
+      "Graduated high school with an academic average of 98% (4.0 GPA)",
       "Student-athlete of the year",
       "Representative of excellence of the exploratory sports program",
       "7 merits of excellence for the highest average",
