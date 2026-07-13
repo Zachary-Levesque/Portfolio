@@ -68,14 +68,14 @@ a {
 }
 
 ::view-transition-old(page-content) {
-  animation: old-content-out 180ms cubic-bezier(0.4, 0, 1, 1) both;
+  animation: old-content-out 150ms cubic-bezier(0.4, 0, 1, 1) both;
   mix-blend-mode: normal;
 }
 
 ::view-transition-new(page-content) {
   animation:
     reveal-new-forward 540ms cubic-bezier(0.16, 1, 0.3, 1) 320ms both,
-    new-content-in 460ms cubic-bezier(0.16, 1, 0.3, 1) 320ms both;
+    new-content-in 720ms cubic-bezier(0.16, 1, 0.3, 1) 100ms both;
   mix-blend-mode: normal;
 }
 
@@ -129,12 +129,25 @@ html[data-transition-direction="backward"]::view-transition-new(page-content) {
 }
 
 @keyframes new-content-in {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(4px);
   }
 
-  to {
+  15% {
+    opacity: 0.18;
+  }
+
+  40% {
+    opacity: 0.58;
+    transform: translateY(2px);
+  }
+
+  72% {
+    opacity: 0.88;
+  }
+
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
