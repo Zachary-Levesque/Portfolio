@@ -77,7 +77,7 @@ a {
   mix-blend-mode: normal;
 }
 
-html[data-transition-direction="backward"] ::view-transition-new(page-content) {
+html[data-transition-direction="backward"]::view-transition-new(page-content) {
   animation-name: reveal-new-backward;
 }
 
