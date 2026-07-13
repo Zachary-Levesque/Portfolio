@@ -42,23 +42,32 @@ a {
   view-transition-name: site-footer;
 }
 
-.page-content {
-  view-transition-name: page-content;
+::view-transition-image-pair(root) {
+  isolation: isolate;
 }
 
-::view-transition-group(root) {
-  outline: 3px solid magenta;
+::view-transition-old(root),
+::view-transition-new(root) {
+  mix-blend-mode: normal;
 }
 
 ::view-transition-old(root) {
-  animation: debug-old-page 650ms ease-in-out both;
+  animation: page-old 360ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 ::view-transition-new(root) {
-  animation: debug-new-page 650ms ease-in-out both;
+  animation: page-new 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-@keyframes debug-old-page {
+::view-transition-old(site-header),
+::view-transition-new(site-header),
+::view-transition-old(site-footer),
+::view-transition-new(site-footer) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@keyframes page-old {
   from {
     opacity: 1;
   }
@@ -68,7 +77,7 @@ a {
   }
 }
 
-@keyframes debug-new-page {
+@keyframes page-new {
   from {
     opacity: 0;
   }
@@ -83,8 +92,6 @@ a {
     scroll-behavior: auto;
   }
 
-  ::view-transition-old(page-content),
-  ::view-transition-new(page-content),
   ::view-transition-old(root),
   ::view-transition-new(root),
   ::view-transition-old(site-header),
