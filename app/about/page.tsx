@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function AboutPage() {
   const sections = [
     {
-      title: "Opening",
+      title: "Introduction",
       body: "I've always wanted to understand how things actually work. I do not just want to know what they do, but why. That curiosity pulled me into Electrical Engineering and Physics, and it's what keeps me focused on systems engineering: not one layer of the stack, but the whole path from raw input to working output."
     },
     {
       title: "What I do now",
-      body: "I'm currently a Systems Verification Engineer at Ranovus, working across hardware and firmware boundaries to implement and validate communication protocols like I2C and SPI. Alongside that, I'm building Seets, an IoT occupancy tracking startup I co founded that's now piloting at the University of Ottawa Heart Institute, and Knovara, an AI powered onboarding copilot for engineering teams. Whether I'm solving a technical problem or running a company, I want to understand why something works, not just that it does."
+      body: "I'm currently a Systems Verification Engineer at Ranovus, working across hardware and firmware boundaries to implement and validate communication protocols like I2C and SPI. Alongside that, I'm building Seets, an IoT occupancy tracking startup I co founded that's now piloting at the University of Ottawa Heart Institute. Whether I'm solving a technical problem or running a company, I want to understand why something works, not just that it does."
     },
     {
       title: "A story",
@@ -35,7 +35,7 @@ export default function AboutPage() {
       </figure>
 
       <div className="space-y-12">
-        {sections.map((section, index) => (
+        {sections.map((section) => (
           <section
             key={section.title}
             className="space-y-3 rounded-3xl border border-accent-border bg-surface p-6"
