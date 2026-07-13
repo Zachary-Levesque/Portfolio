@@ -68,17 +68,19 @@ a {
 }
 
 ::view-transition-old(page-content) {
-  animation: old-content-out 170ms cubic-bezier(0.4, 0, 1, 1) both;
+  animation: old-content-out 180ms cubic-bezier(0.4, 0, 1, 1) both;
   mix-blend-mode: normal;
 }
 
 ::view-transition-new(page-content) {
-  animation: reveal-new-forward 360ms cubic-bezier(0.22, 1, 0.36, 1) 180ms both;
+  animation:
+    reveal-new-forward 540ms cubic-bezier(0.16, 1, 0.3, 1) 320ms both,
+    new-content-in 460ms cubic-bezier(0.16, 1, 0.3, 1) 320ms both;
   mix-blend-mode: normal;
 }
 
 html[data-transition-direction="backward"]::view-transition-new(page-content) {
-  animation-name: reveal-new-backward;
+  animation-name: reveal-new-backward, new-content-in;
 }
 
 ::view-transition-old(site-header),
@@ -109,26 +111,30 @@ html[data-transition-direction="backward"]::view-transition-new(page-content) {
 @keyframes reveal-new-forward {
   from {
     clip-path: inset(0 0 0 100%);
-    opacity: 0;
-    transform: translateY(4px);
   }
 
   to {
     clip-path: inset(0 0 0 0);
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
 @keyframes reveal-new-backward {
   from {
     clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes new-content-in {
+  from {
     opacity: 0;
     transform: translateY(4px);
   }
 
   to {
-    clip-path: inset(0 0 0 0);
     opacity: 1;
     transform: translateY(0);
   }
