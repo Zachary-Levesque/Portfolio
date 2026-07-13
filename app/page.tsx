@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TransitionLink } from "@/components/transition-link";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -20,24 +20,24 @@ export default function HomePage() {
             aiming for systems engineering or quantitative roles.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-sm">
-            <TransitionLink
+            <Link
               href="/about"
               className="rounded-full border border-accent bg-accent px-5 py-2.5 text-surface transition-colors hover:border-accent-hover hover:bg-accent-hover"
             >
               About Me
-            </TransitionLink>
-            <TransitionLink
+            </Link>
+            <Link
               href="/experience"
               className="rounded-full border border-accent-border bg-surface px-5 py-2.5 text-accent transition-colors hover:border-accent hover:bg-accent-soft"
             >
               View Experience
-            </TransitionLink>
-            <TransitionLink
+            </Link>
+            <Link
               href="/projects"
               className="rounded-full border border-red-border bg-surface px-5 py-2.5 text-red transition-colors hover:border-red hover:bg-red-soft"
             >
               View Projects
-            </TransitionLink>
+            </Link>
           </div>
         </div>
 
