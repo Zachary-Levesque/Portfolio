@@ -38,7 +38,13 @@ export const awards: AwardEntry[] = [
     date: "Jun 2022",
     associatedWith: "Ecole secondaire publique Louis-Riel",
     bullets: [
-      "Advanced Functions 99%, Calculus 99%, Physics 98%, Chemistry 98%, Biology 95%, French 97%, Soccer 95%"
+      "Advanced Functions: 99%",
+      "Calculus: 99%",
+      "Physics: 98%",
+      "Chemistry: 98%",
+      "Biology: 95%",
+      "French: 97%",
+      "Soccer: 95%"
     ]
   },
   {
