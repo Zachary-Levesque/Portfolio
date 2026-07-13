@@ -27,7 +27,7 @@ export default function HobbiesPage() {
       imageAlt: "Zachary golfing",
       imagePosition: "object-[50%_78%]",
       description:
-        "I started golfing about four years ago and I am still working on my game. I currently play at a 15 handicap."
+        "I started golfing about four years ago and I am still working on my game. I am definitely not the best yet, and I currently play at a 15 handicap."
     },
     {
       title: "Guitar",
@@ -35,7 +35,8 @@ export default function HobbiesPage() {
       image: null,
       imageAlt: null,
       imagePosition: "object-center",
-      description: "I started playing guitar six months ago and I love learning it."
+      description:
+        "I started playing guitar six months ago and I love learning it. My favorite song to play is Straight and Narrow by Sam Barber."
     },
     {
       title: "Skiing",
@@ -43,7 +44,8 @@ export default function HobbiesPage() {
       image: "/images/ski.jpeg",
       imageAlt: "Zachary skiing",
       imagePosition: "object-[50%_40%]",
-      description: "I have been skiing my whole life."
+      description:
+        "I have been skiing my whole life. I enjoy the adrenaline, and I love glade skiing."
     },
     {
       title: "Sports",
@@ -52,7 +54,7 @@ export default function HobbiesPage() {
       imageAlt: "Zachary at a sports event",
       imagePosition: "object-[50%_70%]",
       description:
-        "Beyond soccer, golf, and skiing, I just love sports in general, watching and playing whatever I can."
+        "Beyond soccer, golf, and skiing, I love sports, the competitive aspect, and playing as part of a team. I am the most competitive person in the world, and sports have been an integral part of my life."
     },
     {
       title: "The Outdoors",
