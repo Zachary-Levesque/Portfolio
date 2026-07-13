@@ -61,6 +61,22 @@ export const experience: ExperienceEntry[] = [
     skills: ["Leadership", "Physics", "Teaching", "Communication"]
   },
   {
+    company: "University of Ottawa",
+    role: "Teaching Assistant (Tutorial) - ELG 3525: Signal & System Analysis",
+    dateRange: "Sep 2025 to Dec 2025, Ottawa, ON",
+    bullets: [
+      "Facilitated tutorial sessions guiding students through signal and system analysis concepts",
+      "Supported students with problem-solving techniques for complex electrical engineering coursework",
+      "Explained mathematical and engineering concepts clearly in a collaborative learning environment"
+    ],
+    skills: [
+      "Leadership",
+      "Electrical Engineering",
+      "Signal Processing",
+      "Teaching"
+    ]
+  },
+  {
     company: "APRIQuOt",
     role: "Quantum AI Researcher (Intern)",
     dateRange: "Sep 2025 to Apr 2026, Ottawa, ON",
@@ -76,22 +92,6 @@ export const experience: ExperienceEntry[] = [
       "Physics",
       "Data Analysis",
       "Machine Learning"
-    ]
-  },
-  {
-    company: "University of Ottawa",
-    role: "Teaching Assistant (Tutorial) - ELG 3525: Signal & System Analysis",
-    dateRange: "Sep 2025 to Dec 2025, Ottawa, ON",
-    bullets: [
-      "Facilitated tutorial sessions guiding students through signal and system analysis concepts",
-      "Supported students with problem-solving techniques for complex electrical engineering coursework",
-      "Explained mathematical and engineering concepts clearly in a collaborative learning environment"
-    ],
-    skills: [
-      "Leadership",
-      "Electrical Engineering",
-      "Signal Processing",
-      "Teaching"
     ]
   },
   {
