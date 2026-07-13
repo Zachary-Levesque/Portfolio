@@ -130,7 +130,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "Hydro Ottawa",
-    role: "Data Engineering Intern",
+    role: "Data Engineering (Intern)",
     dateRange: "May 2024 to Aug 2024, Ottawa, ON",
     bullets: [
       "Analyzed and leveraged GIS data for the city's Electrical Distribution Network to optimize performance and infrastructure development",
@@ -141,7 +141,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "Festival House",
-    role: "Design Engineer",
+    role: "Design Engineer (Intern)",
     dateRange: "Jun 2022 to Jul 2024, Ottawa, ON",
     bullets: [
       "Designed detailed plans and layouts for major events including Bluesfest and Canada Day, supporting large-scale infrastructure deployment",
@@ -152,7 +152,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "CECCE",
-    role: "Software Engineer",
+    role: "Software Engineer (Intern)",
     dateRange: "May 2020 to Sep 2020, Ottawa, ON",
     bullets: [
       "Created software allowing students to do school work virtually",
