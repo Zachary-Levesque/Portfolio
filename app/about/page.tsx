@@ -4,11 +4,11 @@ export default function AboutPage() {
   const sections = [
     {
       title: "Introduction",
-      body: "I've always wanted to understand how things actually work. I do not just want to know what they do, but why. That curiosity pulled me into Electrical Engineering and Physics, and it's what keeps me focused on systems engineering: not one layer of the stack, but the whole path from raw input to working output."
+      body: "I've always wanted to understand how things actually work. As a kid, I was always asking questions: how does this work, why does that happen, and what is really going on underneath? That curiosity shaped who I am and pushed me toward Electrical Engineering and Physics, where I could build a deeper understanding of the physical world while learning how to apply that knowledge through engineering to create real solutions."
     },
     {
       title: "What I do now",
-      body: "I'm currently a Systems Verification Engineer at Ranovus, working across hardware and firmware boundaries to implement and validate communication protocols like I2C and SPI. Alongside that, I'm building Seets, an IoT occupancy tracking startup I co founded that's now piloting at the University of Ottawa Heart Institute. Whether I'm solving a technical problem or running a company, I want to understand why something works, not just that it does."
+      body: "I'm currently a Systems Verification Engineer at Ranovus, working across hardware and firmware boundaries to implement and validate communication protocols like I2C and SPI. Alongside that, I'm building Seets, an IoT occupancy tracking startup I co founded that's now piloting at the University of Ottawa Heart Institute. Across engineering and entrepreneurship, I care about understanding the principles behind a system so I can build, test, and improve it with purpose."
     },
     {
       title: "A story",
