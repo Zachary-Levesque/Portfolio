@@ -34,7 +34,10 @@ export function ViewTransitionProvider({ children }: { children: ReactNode }) {
 
   const navigate = useCallback(
     (href: string) => {
-      if (!("startViewTransition" in document) || prefersReducedMotion()) {
+      if (
+        typeof document.startViewTransition !== "function" ||
+        prefersReducedMotion()
+      ) {
         router.push(href);
         return;
       }
