@@ -3,7 +3,7 @@ import { education } from "@/content/education";
 
 export default function EducationPage() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-10">
       <section className="max-w-3xl">
         <p className="font-mono text-sm uppercase text-accent-muted">
           Academic background
@@ -13,7 +13,7 @@ export default function EducationPage() {
         </h1>
       </section>
 
-      <section className="space-y-6">
+      <section className="space-y-5">
         {education.map((entry) => (
           <article
             key={`${entry.school}-${entry.credential}`}
