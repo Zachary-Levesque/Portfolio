@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
+import { PageLinks } from "@/components/page-links";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
           <Nav />
           <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-12">
             {children}
+            <PageLinks />
           </main>
           <Footer />
         </div>
