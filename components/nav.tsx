@@ -1,3 +1,6 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import { ViewTransitionLink } from "@/components/view-transition-link";
 
 const navItems = [
@@ -12,6 +15,8 @@ const navItems = [
 ];
 
 export function Nav() {
+  const pathname = usePathname();
+
   return (
     <header className="site-header sticky top-0 z-30 border-b border-accent-border bg-surface-blue">
       <nav
@@ -22,9 +27,12 @@ export function Nav() {
           <ViewTransitionLink
             key={item.href}
             href={item.href}
-            className="text-muted transition-colors hover:text-accent"
+            className="relative text-muted transition-colors hover:text-accent"
           >
             {item.label}
+            {pathname === item.href ? (
+              <span className="active-nav-indicator" />
+            ) : null}
           </ViewTransitionLink>
         ))}
       </nav>
