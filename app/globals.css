@@ -52,11 +52,11 @@ a {
 }
 
 ::view-transition-old(root) {
-  animation: page-old 360ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: page-fade-out 700ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 ::view-transition-new(root) {
-  animation: page-new 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: page-fade-in 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 ::view-transition-old(site-header),
@@ -67,22 +67,34 @@ a {
   mix-blend-mode: normal;
 }
 
-@keyframes page-old {
-  from {
+@keyframes page-fade-out {
+  0% {
     opacity: 1;
   }
 
-  to {
+  18% {
+    opacity: 1;
+  }
+
+  100% {
     opacity: 0;
   }
 }
 
-@keyframes page-new {
-  from {
+@keyframes page-fade-in {
+  0% {
     opacity: 0;
   }
 
-  to {
+  10% {
+    opacity: 0.08;
+  }
+
+  45% {
+    opacity: 0.65;
+  }
+
+  100% {
     opacity: 1;
   }
 }
