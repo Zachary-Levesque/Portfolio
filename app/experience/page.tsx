@@ -33,7 +33,7 @@ export default function ExperiencePage() {
 
       <section className="relative space-y-6">
         {orderedEntries.map((entry) =>
-          entry.type === "teaching-assistant-group" ? (
+          "type" in entry && entry.type === "teaching-assistant-group" ? (
             <article
               key="university-of-ottawa-ta-group"
               className="rounded-3xl border border-accent-border bg-surface p-6 transition-colors hover:bg-surface-blue"
