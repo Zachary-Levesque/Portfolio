@@ -2,19 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
-  const highlights = [
-    { label: "Systems verification", tone: "blue" },
-    { label: "Embedded protocols", tone: "blue" },
-    { label: "Startup builder", tone: "red" }
-  ];
-
   return (
     <section className="flex min-h-[65vh] items-center py-16">
       <div className="grid w-full gap-10 md:grid-cols-[1fr_340px] md:items-center">
         <div className="max-w-3xl rounded-3xl border border-accent-border bg-surface p-8">
-          <p className="mb-5 font-mono text-sm uppercase text-red-muted">
-            Electrical engineering portfolio
-          </p>
           <h1 className="font-mono text-5xl font-semibold leading-tight text-foreground md:text-7xl">
             Zachary Levesque
           </h1>
@@ -28,20 +19,6 @@ export default function HomePage() {
             the University of Ottawa Heart Institute. Graduating Winter 2027,
             aiming for systems engineering or quantitative roles.
           </p>
-          <div className="mt-6 flex flex-wrap gap-2 font-mono text-xs">
-            {highlights.map((item) => (
-              <span
-                key={item.label}
-                className={
-                  item.tone === "red"
-                    ? "rounded-full border border-red-border bg-red-soft px-3 py-1.5 text-red-muted"
-                    : "rounded-full border border-accent-border bg-accent-soft px-3 py-1.5 text-accent-muted"
-                }
-              >
-                {item.label}
-              </span>
-            ))}
-          </div>
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-sm">
             <Link
               href="/about"
