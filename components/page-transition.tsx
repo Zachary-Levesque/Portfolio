@@ -1,54 +1,86 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
 
-const EXIT_DURATION_MS = 180;
+const EXIT_CLEANUP_MS = 560;
 
-type Phase = "entering" | "exiting";
+type PageLayer = {
+  pathname: string;
+  children: ReactNode;
+  shouldAnimate: boolean;
+};
 
 export function PageTransition({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-  const [displayedChildren, setDisplayedChildren] = useState(children);
-  const [displayedPathname, setDisplayedPathname] = useState(pathname);
-  const [phase, setPhase] = useState<Phase>("entering");
-  const previousPathname = useRef(pathname);
-  const pendingChildren = useRef(children);
-  const pendingPathname = useRef(pathname);
+  const [activeLayer, setActiveLayer] = useState<PageLayer>({
+    pathname,
+    children,
+    shouldAnimate: false
+  });
+  const [exitingLayer, setExitingLayer] = useState<PageLayer | null>(null);
+  const [gradientKey, setGradientKey] = useState(0);
+  const activeLayerRef = useRef(activeLayer);
 
-  useEffect(() => {
-    pendingChildren.current = children;
-    pendingPathname.current = pathname;
-  }, [children, pathname]);
+  useLayoutEffect(() => {
+    const previousLayer = activeLayerRef.current;
 
-  useEffect(() => {
-    if (pathname === previousPathname.current) {
+    if (pathname === previousLayer.pathname) {
+      const updatedLayer = { ...previousLayer, children };
+      activeLayerRef.current = updatedLayer;
+      setActiveLayer(updatedLayer);
       return;
     }
 
-    previousPathname.current = pathname;
-    setPhase("exiting");
+    const nextLayer = {
+      pathname,
+      children,
+      shouldAnimate: true
+    };
+
+    activeLayerRef.current = nextLayer;
+    setExitingLayer(previousLayer);
+    setActiveLayer(nextLayer);
+    setGradientKey((key) => key + 1);
 
     const timeoutId = window.setTimeout(() => {
-      setDisplayedChildren(pendingChildren.current);
-      setDisplayedPathname(pendingPathname.current);
-      setPhase("entering");
-    }, EXIT_DURATION_MS);
+      setExitingLayer(null);
+    }, EXIT_CLEANUP_MS);
 
     return () => window.clearTimeout(timeoutId);
-  }, [pathname]);
+  }, [children, pathname]);
 
   return (
-    <div
-      key={displayedPathname}
-      className={
-        phase === "exiting"
-          ? "page-transition page-transition--exit"
-          : "page-transition page-transition--enter"
-      }
-    >
-      {displayedChildren}
+    <div className="page-transition-shell">
+      {gradientKey > 0 ? (
+        <div
+          key={gradientKey}
+          aria-hidden="true"
+          className="page-transition-gradient"
+        />
+      ) : null}
+
+      <div
+        key={activeLayer.pathname}
+        className={
+          activeLayer.shouldAnimate
+            ? "page-transition-layer page-transition-layer--enter"
+            : "page-transition-layer"
+        }
+      >
+        {activeLayer.children}
+      </div>
+
+      {exitingLayer ? (
+        <div
+          key={`exit-${exitingLayer.pathname}`}
+          aria-hidden="true"
+          className="page-transition-layer page-transition-layer--exit"
+        >
+          {exitingLayer.children}
+        </div>
+      ) : null}
     </div>
   );
 }
