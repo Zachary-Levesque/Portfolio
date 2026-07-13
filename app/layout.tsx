@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
+import { PageTransition } from "@/components/page-transition";
 import { PageLinks } from "@/components/page-links";
 import "./globals.css";
 
@@ -20,8 +21,10 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           <Nav />
           <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-12">
-            {children}
-            <PageLinks />
+            <PageTransition>
+              {children}
+              <PageLinks />
+            </PageTransition>
           </main>
           <Footer />
         </div>
