@@ -46,27 +46,19 @@ a {
   view-transition-name: page-content;
 }
 
-::view-transition-old(root),
-::view-transition-new(root),
-::view-transition-old(site-header),
-::view-transition-new(site-header),
-::view-transition-old(site-footer),
-::view-transition-new(site-footer) {
-  animation: none;
-  mix-blend-mode: normal;
+::view-transition-group(root) {
+  outline: 3px solid magenta;
 }
 
-::view-transition-old(page-content) {
-  animation: page-content-out 180ms cubic-bezier(0.4, 0, 1, 1) both;
-  mix-blend-mode: normal;
+::view-transition-old(root) {
+  animation: debug-old-page 650ms ease-in-out both;
 }
 
-::view-transition-new(page-content) {
-  animation: page-content-in 240ms cubic-bezier(0, 0, 0.2, 1) both;
-  mix-blend-mode: normal;
+::view-transition-new(root) {
+  animation: debug-new-page 650ms ease-in-out both;
 }
 
-@keyframes page-content-out {
+@keyframes debug-old-page {
   from {
     opacity: 1;
   }
@@ -76,7 +68,7 @@ a {
   }
 }
 
-@keyframes page-content-in {
+@keyframes debug-new-page {
   from {
     opacity: 0;
   }
