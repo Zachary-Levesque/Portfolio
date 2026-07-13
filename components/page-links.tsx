@@ -1,6 +1,6 @@
 "use client";
 
-import { TransitionLink } from "@/components/transition-link";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const pages = [
@@ -35,7 +35,7 @@ export function PageLinks() {
       className="mt-16 grid gap-3 border-t border-accent-border pt-8 font-mono text-sm md:grid-cols-2"
     >
       {previousPage ? (
-        <TransitionLink
+        <Link
           href={previousPage.href}
           className="rounded-3xl border border-accent-border bg-surface p-5 text-muted transition-colors hover:bg-surface-blue hover:text-accent"
         >
@@ -45,13 +45,13 @@ export function PageLinks() {
           <span className="mt-2 block text-lg text-foreground">
             {previousPage.label}
           </span>
-        </TransitionLink>
+        </Link>
       ) : (
         <div />
       )}
 
       {nextPage ? (
-        <TransitionLink
+        <Link
           href={nextPage.href}
           className="rounded-3xl border border-accent-border bg-surface p-5 text-right text-muted transition-colors hover:bg-surface-blue hover:text-accent"
         >
@@ -59,7 +59,7 @@ export function PageLinks() {
           <span className="mt-2 block text-lg text-foreground">
             {nextPage.label}
           </span>
-        </TransitionLink>
+        </Link>
       ) : null}
     </nav>
   );
