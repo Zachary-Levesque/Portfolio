@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
-import { PageTransition } from "@/components/page-transition";
 import { PageLinks } from "@/components/page-links";
+import { ViewTransitionProvider } from "@/components/view-transition-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,16 +18,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="flex min-h-screen flex-col">
-          <Nav />
-          <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-12">
-            <PageTransition>
+        <ViewTransitionProvider>
+          <div className="flex min-h-screen flex-col">
+            <Nav />
+            <main className="page-content mx-auto w-full max-w-6xl flex-1 px-6 py-12">
               {children}
               <PageLinks />
-            </PageTransition>
-          </main>
-          <Footer />
-        </div>
+            </main>
+            <Footer />
+          </div>
+        </ViewTransitionProvider>
       </body>
     </html>
   );
