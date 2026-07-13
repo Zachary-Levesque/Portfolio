@@ -12,7 +12,7 @@ const navItems = [
 
 export function Nav() {
   return (
-    <header className="border-b border-accent-border bg-surface-blue">
+    <header className="sticky top-0 z-30 border-b border-accent-border bg-surface-blue">
       <nav
         className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-6 border-l-4 border-red px-6 py-5 font-mono text-sm"
         aria-label="Main navigation"
