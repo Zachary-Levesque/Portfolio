@@ -50,6 +50,17 @@ export const experience: ExperienceEntry[] = [
     ]
   },
   {
+    company: "University of Ottawa",
+    role: "Teaching Assistant (Tutorial) - PHY 1722: Principles of Physics II",
+    dateRange: "Jan 2026 to May 2026, Ottawa, ON",
+    bullets: [
+      "Lead tutorial sessions supporting students in electricity and magnetism, waves, and related problem-solving techniques",
+      "Provide one-on-one and small-group academic support through the Physics Help Centre",
+      "Help students strengthen problem-solving strategies and build confidence in core physics concepts"
+    ],
+    skills: ["Leadership", "Physics", "Teaching", "Communication"]
+  },
+  {
     company: "APRIQuOt",
     role: "Quantum AI Researcher (Intern)",
     dateRange: "Sep 2025 to Apr 2026, Ottawa, ON",
@@ -65,6 +76,22 @@ export const experience: ExperienceEntry[] = [
       "Physics",
       "Data Analysis",
       "Machine Learning"
+    ]
+  },
+  {
+    company: "University of Ottawa",
+    role: "Teaching Assistant (Tutorial) - ELG 3525: Signal & System Analysis",
+    dateRange: "Sep 2025 to Dec 2025, Ottawa, ON",
+    bullets: [
+      "Facilitated tutorial sessions guiding students through signal and system analysis concepts",
+      "Supported students with problem-solving techniques for complex electrical engineering coursework",
+      "Explained mathematical and engineering concepts clearly in a collaborative learning environment"
+    ],
+    skills: [
+      "Leadership",
+      "Electrical Engineering",
+      "Signal Processing",
+      "Teaching"
     ]
   },
   {
