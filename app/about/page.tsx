@@ -17,7 +17,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-3xl space-y-14">
+    <div className="mx-auto max-w-3xl space-y-10 sm:space-y-14">
       <figure>
         <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-accent-border bg-surface-blue p-2">
           <Image
@@ -34,16 +34,18 @@ export default function AboutPage() {
         </figcaption>
       </figure>
 
-      <div className="space-y-12">
+      <div className="space-y-8 sm:space-y-12">
         {sections.map((section) => (
           <section
             key={section.title}
-            className="space-y-3 rounded-3xl border border-accent-border bg-surface p-6"
+            className="space-y-3 rounded-3xl border border-accent-border bg-surface p-5 sm:p-6"
           >
             <h2 className="font-mono text-xl font-semibold text-accent-muted">
               {section.title}
             </h2>
-            <p className="text-lg leading-8 text-foreground">{section.body}</p>
+            <p className="leading-7 text-foreground sm:text-lg sm:leading-8">
+              {section.body}
+            </p>
           </section>
         ))}
       </div>
