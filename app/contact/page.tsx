@@ -21,14 +21,6 @@ export default function ContactPage() {
       </section>
 
       <section className="space-y-3 font-mono text-sm">
-        <a
-          href="/files/resume.pdf"
-          target="_blank"
-          rel="noreferrer"
-          className="mb-5 block rounded-2xl border border-accent bg-accent px-5 py-4 text-base text-surface transition-colors hover:border-accent-hover hover:bg-accent-hover"
-        >
-          Resume
-        </a>
         {links.map((link) => (
           <a
             key={link.href}
@@ -38,6 +30,14 @@ export default function ContactPage() {
             {link.label}
           </a>
         ))}
+        <a
+          href="/files/resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="block rounded-2xl border border-accent bg-accent px-5 py-4 text-base text-surface transition-colors hover:border-accent-hover hover:bg-accent-hover"
+        >
+          Resume
+        </a>
       </section>
     </div>
   );
