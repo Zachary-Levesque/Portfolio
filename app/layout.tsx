@@ -7,7 +7,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Personal portfolio for systems engineering and quant-track roles."
+  description: "Personal portfolio for systems engineering and quant-track roles.",
+  icons: {
+    icon: "/favicon.svg"
+  }
 };
 
 export default function RootLayout({
