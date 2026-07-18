@@ -24,7 +24,9 @@ export default function ProjectsPage() {
 
       <section className="mx-auto max-w-3xl text-center">
         <p className="font-mono text-sm uppercase text-red-muted">Work</p>
-        <h1 className="mt-3 font-mono text-4xl font-semibold">Projects</h1>
+        <h1 className="mt-3 font-mono text-3xl font-semibold sm:text-4xl">
+          Projects
+        </h1>
         <p className="mt-4 leading-7 text-muted">
           Systems projects across machine learning infrastructure, quantitative
           research, embedded products, AI agents, and simulation.
