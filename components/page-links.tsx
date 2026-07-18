@@ -33,7 +33,7 @@ export function PageLinks() {
   return (
     <nav
       aria-label="Page navigation"
-      className="mt-12 grid gap-3 border-t border-accent-border pt-6 font-mono text-sm sm:mt-16 sm:pt-8 md:grid-cols-2"
+      className="mt-12 grid grid-cols-2 gap-3 border-t border-accent-border pt-6 font-mono text-sm sm:mt-16 sm:pt-8"
     >
       {previousPage ? (
         <ViewTransitionLink
@@ -54,7 +54,7 @@ export function PageLinks() {
       {nextPage ? (
         <ViewTransitionLink
           href={nextPage.href}
-          className="min-h-11 rounded-3xl border border-accent-border bg-surface p-5 text-left text-muted transition-colors hover:bg-surface-blue hover:text-accent md:text-right"
+          className="min-h-11 rounded-3xl border border-accent-border bg-surface p-5 text-right text-muted transition-colors hover:bg-surface-blue hover:text-accent"
         >
           <span className="block text-xs uppercase text-red-muted">Next</span>
           <span className="mt-2 block text-lg text-foreground">
