@@ -64,13 +64,21 @@ a {
 
 .active-nav-indicator {
   position: absolute;
-  bottom: -0.45rem;
-  left: 0;
+  bottom: 0.35rem;
+  left: 1rem;
   height: 2px;
-  width: 100%;
+  width: calc(100% - 2rem);
   border-radius: 999px;
   background: theme("colors.red");
   view-transition-name: active-nav-indicator;
+}
+
+@media (min-width: 768px) {
+  .active-nav-indicator {
+    bottom: -0.45rem;
+    left: 0;
+    width: 100%;
+  }
 }
 
 ::view-transition-image-pair(root) {
