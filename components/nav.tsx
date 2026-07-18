@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { ViewTransitionLink } from "@/components/view-transition-link";
 
@@ -18,10 +18,6 @@ const navItems = [
 export function Nav() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [pathname]);
 
   return (
     <header className="site-header sticky top-0 z-30 border-b border-accent-border bg-surface-blue">
@@ -52,6 +48,7 @@ export function Nav() {
             <ViewTransitionLink
               key={item.href}
               href={item.href}
+              onClick={() => setIsMenuOpen(false)}
               className="relative block min-h-11 rounded-2xl border border-accent-border bg-surface px-4 py-3 text-muted transition-colors hover:bg-accent-soft hover:text-accent md:min-h-0 md:rounded-none md:border-0 md:bg-transparent md:p-0 md:hover:bg-transparent"
             >
               {item.label}
