@@ -63,8 +63,10 @@ export default function HobbiesPage() {
   return (
     <div className="space-y-10">
       <section className="max-w-3xl">
-        <p className="font-mono text-sm uppercase text-accent-muted">Outside work</p>
-        <h1 className="mt-3 font-mono text-4xl font-semibold text-foreground">
+        <p className="font-mono text-sm uppercase text-accent-muted">
+          Outside work
+        </p>
+        <h1 className="mt-3 font-mono text-3xl font-semibold text-foreground sm:text-4xl">
           Hobbies
         </h1>
       </section>
@@ -73,9 +75,9 @@ export default function HobbiesPage() {
         {hobbies.map((hobby, index) => (
           <article
             key={hobby.title}
-            className="grid overflow-hidden rounded-3xl border border-accent-border bg-surface transition-colors hover:bg-surface-blue md:grid-cols-[1fr_320px]"
+            className="grid overflow-hidden rounded-3xl border border-accent-border bg-surface transition-colors hover:bg-surface-blue md:grid-cols-[minmax(0,1fr)_320px]"
           >
-            <div className="flex flex-col p-6">
+            <div className="flex min-w-0 flex-col p-5 sm:p-6">
               <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-red-border bg-red-soft font-mono text-sm text-red-muted">
                 {String(index + 1).padStart(2, "0")}
               </div>
