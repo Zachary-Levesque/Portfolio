@@ -8,7 +8,7 @@ export default function EducationPage() {
         <p className="font-mono text-sm uppercase text-accent-muted">
           Academic background
         </p>
-        <h1 className="mt-3 font-mono text-4xl font-semibold text-foreground">
+        <h1 className="mt-3 font-mono text-3xl font-semibold text-foreground sm:text-4xl">
           Education
         </h1>
       </section>
@@ -17,10 +17,10 @@ export default function EducationPage() {
         {education.map((entry) => (
           <article
             key={`${entry.school}-${entry.credential}`}
-            className="rounded-3xl border border-accent-border bg-surface p-6 transition-colors hover:bg-surface-blue"
+            className="rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6"
           >
             <p className="font-mono text-sm text-muted">{entry.dateRange}</p>
-            <h2 className="mt-2 font-mono text-2xl font-semibold text-foreground">
+            <h2 className="mt-2 font-mono text-xl font-semibold text-foreground sm:text-2xl">
               {entry.school}
             </h2>
             <p className="mt-1 text-foreground">{entry.credential}</p>
@@ -58,7 +58,7 @@ export default function EducationPage() {
           <p className="font-mono text-sm uppercase text-red-muted">
             Recognition
           </p>
-          <h2 className="mt-3 font-mono text-3xl font-semibold text-foreground">
+          <h2 className="mt-3 font-mono text-2xl font-semibold text-foreground sm:text-3xl">
             Honors & Awards
           </h2>
         </div>
@@ -67,7 +67,7 @@ export default function EducationPage() {
           {awards.map((award) => (
             <article
               key={`${award.title}-${award.date}`}
-              className="rounded-3xl border border-accent-border bg-surface p-6 transition-colors hover:bg-surface-blue"
+              className="rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6"
             >
               <p className="font-mono text-sm text-muted">{award.date}</p>
               <h3 className="mt-2 font-mono text-xl font-semibold text-foreground">
