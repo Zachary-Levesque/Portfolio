@@ -28,10 +28,10 @@ export default function ExperiencePage() {
   const renderExperienceEntry = (entry: (typeof experience)[number]) => (
     <article key={`${entry.company}-${entry.role}`} className="relative">
       <p className="font-mono text-sm text-muted">{entry.dateRange}</p>
-      <div className="mt-2 rounded-3xl border border-accent-border bg-surface p-6 transition-colors hover:bg-surface-blue">
+      <div className="mt-2 rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6">
         <div className="flex flex-wrap items-baseline justify-between gap-3">
-          <div>
-            <h2 className="font-mono text-2xl font-semibold text-foreground">
+          <div className="min-w-0">
+            <h2 className="font-mono text-xl font-semibold text-foreground sm:text-2xl">
               {entry.role}
             </h2>
             <p className="mt-1 text-accent-muted">{entry.company}</p>
@@ -65,16 +65,18 @@ export default function ExperiencePage() {
     <div className="space-y-10">
       <section className="max-w-3xl">
         <p className="font-mono text-sm uppercase text-accent-muted">Timeline</p>
-        <h1 className="mt-3 font-mono text-4xl font-semibold">Experience</h1>
+        <h1 className="mt-3 font-mono text-3xl font-semibold sm:text-4xl">
+          Experience
+        </h1>
       </section>
 
       <section className="relative space-y-6">
         {entriesBeforeTeachingAssistant.map(renderExperienceEntry)}
 
-        <article className="rounded-3xl border border-accent-border bg-surface p-6 transition-colors hover:bg-surface-blue">
+        <article className="rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6">
           <div className="flex flex-wrap items-baseline justify-between gap-3">
-            <div>
-              <h2 className="font-mono text-2xl font-semibold text-foreground">
+            <div className="min-w-0">
+              <h2 className="font-mono text-xl font-semibold text-foreground sm:text-2xl">
                 Teaching Assistant
               </h2>
               <p className="mt-1 text-accent-muted">University of Ottawa</p>
@@ -90,7 +92,7 @@ export default function ExperiencePage() {
                 <p className="font-mono text-sm text-muted">
                   {taEntry.dateRange}
                 </p>
-                <h3 className="mt-2 font-mono text-xl font-semibold text-foreground">
+                <h3 className="mt-2 font-mono text-lg font-semibold text-foreground sm:text-xl">
                   {taEntry.role}
                 </h3>
 
