@@ -94,6 +94,7 @@ export default function HobbiesPage() {
                   src={hobby.image}
                   alt={hobby.imageAlt ?? hobby.title}
                   fill
+                  priority={index === 0}
                   sizes="(max-width: 768px) 100vw, 320px"
                   className={`object-cover ${hobby.imagePosition}`}
                 />
