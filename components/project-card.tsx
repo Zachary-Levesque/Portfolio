@@ -9,13 +9,13 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   const topMetric = project.metrics[0];
 
   return (
-    <article className="flex h-full flex-col rounded-3xl border border-accent-border bg-surface p-6 transition-colors hover:bg-surface-blue">
+    <article className="flex h-full min-w-0 flex-col rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6">
       <div className="mb-4 flex items-start justify-between gap-4">
-        <div>
+        <div className="min-w-0">
           <p className="font-mono text-xs uppercase text-muted">
             {project.dateRange}
           </p>
-          <h3 className="mt-2 font-mono text-xl font-semibold text-foreground">
+          <h3 className="mt-2 font-mono text-lg font-semibold text-foreground sm:text-xl">
             {project.title}
           </h3>
         </div>
@@ -48,7 +48,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
         ))}
       </div>
 
-      <div className="mt-auto flex gap-4 pt-6 font-mono text-sm">
+      <div className="mt-auto flex flex-wrap gap-4 pt-6 font-mono text-sm">
         {project.githubUrl ? (
           <a
             href={project.githubUrl}
