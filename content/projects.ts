@@ -10,6 +10,44 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Knovara",
+    dateRange: "May 2026 to Present",
+    description:
+      "AI-powered technical ramp-up copilot that maps a company's code, docs, projects, decisions, and people so new engineers can become productive faster. It turns scattered organizational knowledge into personalized technical mentorship.",
+    metrics: [],
+    techStack: [
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      "Next.js",
+      "ChromaDB",
+      "OpenAI API",
+      "SQLite",
+      "Docker"
+    ],
+    githubUrl: "https://github.com/Zachary-Levesque/Knovara",
+    liveUrl: null
+  },
+  {
+    title: "Smart Sensing Seating System (Seets)",
+    dateRange: "Sep 2025 to Present",
+    description:
+      "IoT smart seating startup product for real-time occupancy tracking and space utilization insights. Piloted at the University of Ottawa Heart Institute as the first live institutional deployment.",
+    metrics: ["Live pilot deployment at the University of Ottawa Heart Institute"],
+    techStack: [
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "IoT",
+      "Embedded Hardware",
+      "PostgreSQL",
+      "Docker",
+      "Real-Time Analytics"
+    ],
+    githubUrl: null,
+    liveUrl: "https://seets.live"
+  },
+  {
     title: "Mini Tensor Engine",
     dateRange: "Jan 2026 to May 2026",
     description:
@@ -19,7 +57,14 @@ export const projects: Project[] = [
       "3.44x additional speedup via int8 quantization at 1024³",
       "Validated against Python/NumPy reference outputs with a full correctness-testing suite"
     ],
-    techStack: ["C++", "Python", "CMake", "AVX2 SIMD", "Multithreading"],
+    techStack: [
+      "C++",
+      "Python",
+      "CMake",
+      "AVX2 SIMD",
+      "Multithreading",
+      "Int8 Quantization"
+    ],
     githubUrl: "https://github.com/Zachary-Levesque/Mini-Tensor-Engine",
     liveUrl: null
   },
@@ -40,6 +85,8 @@ export const projects: Project[] = [
       "TypeScript",
       "Hidden Markov Models",
       "Reinforcement Learning (PPO)",
+      "Quantitative Research",
+      "Streamlit",
       "Recharts"
     ],
     githubUrl:
@@ -47,32 +94,14 @@ export const projects: Project[] = [
     liveUrl: null
   },
   {
-    title: "Knovara",
-    dateRange: "May 2026 to Present",
+    title: "Quantum Math Quest",
+    dateRange: "Nov 2025 to Nov 2025",
     description:
-      "AI-powered technical ramp-up copilot that maps a company's code, docs, projects, decisions, and people so new engineers can become productive faster. It turns scattered organizational knowledge into personalized technical mentorship.",
+      "Python desktop quiz game combining adaptive math practice with quantum-random question selection using Qiskit. An Elo-style rating system adjusts difficulty while quantum circuits drive category and question randomness. Built for the 2025 Qiskit Hackathon.",
     metrics: [],
-    techStack: [
-      "Python",
-      "TypeScript",
-      "FastAPI",
-      "ChromaDB",
-      "OpenAI",
-      "Next.js",
-      "Docker"
-    ],
-    githubUrl: "https://github.com/Zachary-Levesque/Knovara",
+    techStack: ["Python", "Qiskit", "Tkinter", "Elo Rating"],
+    githubUrl: "https://github.com/Zachary-Levesque/Quantum-Math-Quest",
     liveUrl: null
-  },
-  {
-    title: "Smart Sensing Seating System (Seets)",
-    dateRange: "Sep 2025 to Present",
-    description:
-      "IoT smart seating startup product for real-time occupancy tracking and space utilization insights. Piloted at the University of Ottawa Heart Institute as the first live institutional deployment.",
-    metrics: ["Live pilot deployment at the University of Ottawa Heart Institute"],
-    techStack: ["FastAPI", "React", "IoT/Embedded Hardware", "PostgreSQL", "Docker"],
-    githubUrl: null,
-    liveUrl: "https://seets.live"
   },
   {
     title: "Sports Strategy Engine",
@@ -85,12 +114,13 @@ export const projects: Project[] = [
     techStack: [
       "React",
       "TypeScript",
-      "Vite",
       "FastAPI",
       "Pydantic",
       "SQLAlchemy",
       "SQLite",
-      "NumPy"
+      "NumPy",
+      "Monte Carlo Simulation",
+      "SVG"
     ],
     githubUrl: "https://github.com/Zachary-Levesque/Sports-Strategy-Engine",
     liveUrl: null
@@ -108,29 +138,10 @@ export const projects: Project[] = [
       "PostgreSQL",
       "Redis",
       "Docker",
-      "yfinance"
+      "yfinance",
+      "Signal Processing"
     ],
     githubUrl: "https://github.com/Zachary-Levesque/Real-Time-Trading-System",
-    liveUrl: null
-  },
-  {
-    title: "CircuitFlow",
-    dateRange: "2025",
-    description:
-      "Browser-based circuit simulation platform combining a SPICE-like netlist workflow with an interactive schematic editor, running DC, AC, and transient analysis directly in the browser via matrix-based nodal analysis.",
-    metrics: [],
-    techStack: ["TypeScript", "React", "Vite", "math.js", "Recharts"],
-    githubUrl: "https://github.com/Zachary-Levesque/CircuitFlow",
-    liveUrl: null
-  },
-  {
-    title: "Quantum Math Quest",
-    dateRange: "Nov 2025",
-    description:
-      "Python desktop quiz game combining adaptive math practice with quantum-random question selection using Qiskit. An Elo-style rating system adjusts difficulty while quantum circuits drive category and question randomness. Built for the 2025 Qiskit Hackathon.",
-    metrics: [],
-    techStack: ["Python", "Qiskit", "Tkinter"],
-    githubUrl: "https://github.com/Zachary-Levesque/Quantum-Math-Quest",
     liveUrl: null
   },
   {
@@ -139,7 +150,14 @@ export const projects: Project[] = [
     description:
       "Collection of classical AI systems built from first principles, including a minimax Checkers AI, a Q-learning Nim agent, a constraint-satisfaction Crossword solver, a Minesweeper inference engine, and a PageRank simulation. The collection emphasizes algorithmic thinking over high-level library abstraction.",
     metrics: [],
-    techStack: ["Python", "PyTorch"],
+    techStack: [
+      "Python",
+      "Machine Learning",
+      "Search Algorithms",
+      "Reinforcement Learning",
+      "Constraint Satisfaction",
+      "Probabilistic Modeling"
+    ],
     githubUrl: "https://github.com/Zachary-Levesque/AI-Games-and-Logic-Solvers",
     liveUrl: null
   },
@@ -149,19 +167,17 @@ export const projects: Project[] = [
     description:
       "Collection of AI agent automations built in n8n connecting LLMs to real business tools, including appointment scheduling, lead research, LinkedIn content drafting, RAG-based document Q&A, and weather alerts. The project bridges AI from chat to real action.",
     metrics: [],
-    techStack: ["n8n", "Python", "RAG", "Pinecone", "Google Workspace APIs"],
+    techStack: [
+      "n8n",
+      "Python",
+      "RAG",
+      "Pinecone",
+      "Google Workspace APIs",
+      "LLM Workflows",
+      "JSON"
+    ],
     githubUrl: "https://github.com/Zachary-Levesque/AI-agents-workflows",
     liveUrl: null
-  },
-  {
-    title: "1Chat4You",
-    dateRange: "Jan 2023 to Apr 2023",
-    description:
-      "Application streamlining communication between landlords and tenants, providing a secure environment for real-time messaging, document sharing, and essential updates.",
-    metrics: [],
-    techStack: ["TypeScript"],
-    githubUrl: null,
-    liveUrl: "https://makerepo.com/yumba075/1594.-1chat4you-"
   },
   {
     title: "ParaPicture Solutions",
@@ -169,8 +185,35 @@ export const projects: Project[] = [
     description:
       "Flexible arm system enabling individuals with limited mobility to independently capture photographs using a diverse range of photographic tools.",
     metrics: [],
-    techStack: ["Hardware Prototyping"],
+    techStack: ["Hardware Prototyping", "Accessibility Design", "Leadership"],
     githubUrl: null,
     liveUrl: "https://makerepo.com/ZacharyLevesque/1715"
+  },
+  {
+    title: "1Chat4You",
+    dateRange: "Jan 2023 to Apr 2023",
+    description:
+      "Application streamlining communication between landlords and tenants, providing a secure environment for real-time messaging, document sharing, and essential updates.",
+    metrics: [],
+    techStack: ["TypeScript", "Leadership"],
+    githubUrl: null,
+    liveUrl: "https://makerepo.com/yumba075/1594.-1chat4you-"
+  },
+  {
+    title: "CircuitFlow",
+    dateRange: "Sep 2022 to Dec 2022",
+    description:
+      "Browser-based circuit simulation platform combining a SPICE-like netlist workflow with an interactive schematic editor, running DC, AC, and transient analysis directly in the browser via matrix-based nodal analysis.",
+    metrics: [],
+    techStack: [
+      "TypeScript",
+      "React",
+      "Circuit Design and Analysis",
+      "Vite",
+      "math.js",
+      "Recharts"
+    ],
+    githubUrl: "https://github.com/Zachary-Levesque/CircuitFlow",
+    liveUrl: null
   }
 ];
