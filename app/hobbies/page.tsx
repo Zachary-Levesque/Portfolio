@@ -28,9 +28,9 @@ export default function HobbiesPage() {
     },
     {
       title: "Guitar",
-      image: null,
-      imageAlt: null,
-      imagePosition: "object-center",
+      image: "/images/guitar.jpeg",
+      imageAlt: "Zachary playing guitar",
+      imagePosition: "object-[50%_74%]",
       description:
         "I started playing guitar six months ago and I love learning it. My favorite song to play is Straight and Narrow by Sam Barber."
     },
