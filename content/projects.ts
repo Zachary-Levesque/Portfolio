@@ -48,6 +48,29 @@ export const projects: Project[] = [
     liveUrl: "https://seets.live"
   },
   {
+    title: "Smart Flood Detection System",
+    dateRange: "Jul 2026 to Present",
+    description:
+      "ESP32 C3 Mini based IoT flood detection system built after repeated basement flooding. It monitors water level in real time, triggers an independent local buzzer and LED alarm, sends Telegram alerts over WiFi, and logs recent events for serial review.",
+    metrics: [
+      "Completed prototype deployed live in a basement for early flood detection"
+    ],
+    techStack: [
+      "C",
+      "ESP-IDF",
+      "ESP32 C3 Mini",
+      "I2C",
+      "IoT",
+      "Embedded Hardware",
+      "WiFi",
+      "Telegram Bot API",
+      "PCB Design"
+    ],
+    githubUrl:
+      "https://github.com/Zachary-Levesque/Smart-Flood-Detection-System",
+    liveUrl: null
+  },
+  {
     title: "Mini Tensor Engine",
     dateRange: "Jan 2026 to May 2026",
     description:
