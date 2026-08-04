@@ -4,7 +4,7 @@ export default function AboutPage() {
   const sections = [
     {
       title: "Introduction",
-      body: "I've always wanted to understand how things actually work. As a kid, I was always asking questions: how does this work, why does that happen, and what is really going on underneath? That curiosity shaped who I am and pushed me toward Electrical Engineering and Physics, where I could build a deeper understanding of the physical world while learning how to apply that knowledge through engineering to create real solutions."
+      body: "A bit about myself: I've always wanted to understand how things actually work. As a kid, I was always asking questions: how does this work, why does that happen, and what is really going on underneath? That curiosity shaped who I am and pushed me toward Electrical Engineering and Physics, where I could build a deeper understanding of the physical world while learning how to apply that knowledge through engineering to create real solutions."
     },
     {
       title: "What I do now",
