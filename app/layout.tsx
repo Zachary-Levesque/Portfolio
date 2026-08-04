@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ViewTransitionProvider>
-          <div className="flex min-h-screen flex-col">
+          <div className="flex min-h-screen flex-col pt-[77px] md:pt-[65px]">
             <Nav />
             <main className="page-content mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6 sm:py-12">
               {children}
