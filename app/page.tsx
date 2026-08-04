@@ -14,8 +14,8 @@ export default function HomePage() {
             silicon to software.
           </p>
           <p className="mt-6 leading-7 text-muted">
-            Hi! My name is Zachary! I am currently a Systems Verification
-            Engineer at Ranovus, and CEO and co-founder of Seets. I am
+            My name is Zachary Levesque, and I am currently a Systems
+            Verification Engineer at Ranovus, and CEO and co-founder of Seets. I am
             graduating in Winter 2027 and aiming for systems engineering,
             similar engineering roles, or quantitative roles.
           </p>
