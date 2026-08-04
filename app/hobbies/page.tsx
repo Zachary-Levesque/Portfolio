@@ -79,7 +79,7 @@ export default function HobbiesPage() {
           >
             <div className="flex min-w-0 flex-col p-5 sm:p-6">
               <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full border border-red-border bg-red-soft font-mono text-sm text-red-muted">
-                {String(index + 1).padStart(2, "0")}
+                {index + 1}
               </div>
               <h2 className="font-mono text-xl font-semibold text-foreground">
                 {hobby.title}
