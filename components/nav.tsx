@@ -20,7 +20,7 @@ export function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="site-header sticky top-0 z-30 border-b border-accent-border bg-surface-blue">
+    <header className="site-header fixed inset-x-0 top-0 z-50 border-b border-accent-border bg-surface-blue">
       <nav
         className="mx-auto w-full max-w-6xl border-l-4 border-red px-4 py-4 font-mono text-sm sm:px-6 md:flex md:flex-wrap md:items-center md:gap-6 md:py-5"
         aria-label="Main navigation"
