@@ -10,14 +10,14 @@ export default function HomePage() {
             Zachary Levesque
           </h1>
           <p className="mt-5 text-lg leading-8 text-foreground sm:text-xl">
-            Electrical Engineering & Physics student building systems from
-            silicon to software.
+            Hi! My name is Zachary. I build systems from silicon to software.
           </p>
           <p className="mt-6 leading-7 text-muted">
-            Currently a Systems Verification Engineer at Ranovus, and CEO and
-            co-founder of Seets, an IoT occupancy-tracking startup piloting at
-            the University of Ottawa Heart Institute. Graduating Winter 2027,
-            aiming for systems engineering or quantitative roles.
+            I am currently a Systems Verification Engineer at Ranovus, and CEO
+            and co-founder of Seets, an IoT occupancy-tracking startup piloting
+            at the University of Ottawa Heart Institute. I am graduating in
+            Winter 2027 and aiming for systems engineering, related engineering,
+            or quantitative roles.
           </p>
           <div className="mt-8 flex flex-col gap-3 font-mono text-sm sm:flex-row sm:flex-wrap">
             <ViewTransitionLink
