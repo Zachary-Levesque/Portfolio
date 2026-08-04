@@ -14,10 +14,10 @@ export default function HomePage() {
             silicon to software.
           </p>
           <p className="mt-6 leading-7 text-muted">
-            Currently a Systems Verification Engineer at Ranovus, and CEO and
-            co-founder of Seets, an IoT occupancy-tracking startup piloting at
-            the University of Ottawa Heart Institute. Graduating Winter 2027,
-            aiming for systems engineering or quantitative roles.
+            Hi! My name is Zachary! I am currently a Systems Verification
+            Engineer at Ranovus, and CEO and co-founder of Seets. I am
+            graduating in Winter 2027 and aiming for systems engineering,
+            similar engineering roles, or quantitative roles.
           </p>
           <div className="mt-8 flex flex-col gap-3 font-mono text-sm sm:flex-row sm:flex-wrap">
             <ViewTransitionLink
