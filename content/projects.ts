@@ -237,7 +237,7 @@ export const projects: Project[] = [
     description:
       "Application streamlining communication between landlords and tenants, providing a secure environment for real-time messaging, document sharing, and essential updates.",
     metrics: [
-      "Real application developed for Ottawa Community Housing"
+      "Application developed for Ottawa Community Housing"
     ],
     techStack: ["TypeScript", "Leadership"],
     githubUrl: null,
