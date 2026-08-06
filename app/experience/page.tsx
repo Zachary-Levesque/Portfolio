@@ -141,13 +141,16 @@ export default function ExperiencePage() {
         {entriesBeforeTeachingAssistant.map(renderExperienceEntry)}
 
         <article>
+          <p className="font-mono text-sm text-muted">
+            Sep 2025 to May 2026, Ottawa, ON
+          </p>
           {teachingAssistantUrl ? (
             <a
               href={teachingAssistantUrl}
               target="_blank"
               rel="noreferrer"
               aria-label="Visit University of Ottawa"
-              className="block"
+              className="mt-2 block"
             >
               {teachingAssistantCard}
             </a>
