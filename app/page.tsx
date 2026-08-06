@@ -14,10 +14,10 @@ export default function HomePage() {
             silicon to software.
           </p>
           <p className="mt-6 leading-7 text-muted">
-            My name is Zachary Levesque, and I am currently a Systems
-            Verification Engineer at Ranovus, and CEO and co-founder of Seets. I am
-            graduating in April 2027 and aiming for systems engineering,
-            similar engineering roles, or quantitative roles.
+            I&apos;m currently a Systems Verification Engineer at Ranovus and
+            CEO/co-founder of Seets. I&apos;m graduating in April 2027 and
+            targeting systems engineering, related engineering roles, and
+            quantitative roles.
           </p>
           <div className="mt-8 flex flex-col gap-3 font-mono text-sm sm:flex-row sm:flex-wrap">
             <ViewTransitionLink
