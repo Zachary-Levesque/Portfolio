@@ -17,23 +17,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-3xl space-y-10 sm:space-y-14">
-      <figure>
-        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-accent-border bg-surface-blue p-2">
-          <Image
-            src="/images/taiwan.jpeg"
-            alt="Zachary at NCKU Semiconductor Summer School in Taiwan"
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 768px"
-            className="rounded-[1.25rem] object-cover"
-          />
-        </div>
-        <figcaption className="mt-2 font-mono text-xs text-muted">
-          NCKU Semiconductor Summer School, Taiwan.
-        </figcaption>
-      </figure>
-
+    <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10">
       <div className="space-y-8 sm:space-y-12">
         {sections.map((section) => (
           <section
@@ -49,6 +33,22 @@ export default function AboutPage() {
           </section>
         ))}
       </div>
+
+      <figure className="mx-auto w-full max-w-sm lg:mx-0 lg:max-w-none">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-accent-border bg-surface-blue p-2">
+          <Image
+            src="/images/taiwan.jpeg"
+            alt="Zachary at NCKU Semiconductor Summer School in Taiwan"
+            fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 320px"
+            className="rounded-[1.25rem] object-cover object-[50%_35%]"
+          />
+        </div>
+        <figcaption className="mt-2 font-mono text-xs text-muted">
+          NCKU Semiconductor Summer School, Taiwan.
+        </figcaption>
+      </figure>
     </div>
   );
 }
