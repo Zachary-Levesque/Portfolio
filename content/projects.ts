@@ -25,7 +25,7 @@ export const projects: Project[] = [
       "SQLite",
       "Docker"
     ],
-    githubUrl: "https://github.com/Zachary-Levesque/Knovara",
+    githubUrl: null,
     liveUrl: null
   },
   {
