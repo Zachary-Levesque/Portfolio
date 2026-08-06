@@ -23,13 +23,13 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
           </h3>
         </div>
         {project.logoPath ? (
-          <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-2xl border border-accent-border bg-background">
+          <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-accent-border bg-background">
             <Image
               src={project.logoPath}
               alt={`${project.title} logo`}
               fill
-              sizes="56px"
-              className="object-contain p-1"
+              sizes="80px"
+              className="object-contain p-1.5"
             />
           </div>
         ) : null}
