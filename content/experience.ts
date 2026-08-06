@@ -54,9 +54,9 @@ export const experience: ExperienceEntry[] = [
     role: "Teaching Assistant (Tutorial) - PHY 1722: Principles of Physics II",
     dateRange: "Jan 2026 to May 2026, Ottawa, ON",
     bullets: [
-      "Lead tutorial sessions supporting students in electricity and magnetism, waves, and related problem-solving techniques",
-      "Provide one-on-one and small-group academic support through the Physics Help Centre",
-      "Help students strengthen problem-solving strategies and build confidence in core physics concepts"
+      "Led tutorial sessions supporting students in electricity and magnetism, waves, and related problem-solving techniques",
+      "Provided one-on-one and small-group academic support through the Physics Help Centre",
+      "Helped students strengthen problem-solving strategies and build confidence in core physics concepts"
     ],
     skills: ["Leadership", "Physics", "Teaching", "Communication"]
   },
