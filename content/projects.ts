@@ -80,7 +80,7 @@ export const projects: Project[] = [
     description:
       "C++ machine learning inference engine built to understand how low-level performance choices affect model speed on a CPU. The project compares different optimization strategies and backs each performance claim with measured benchmarks.",
     metrics: [
-      "3.37x speedup over naive baseline at 1024³ matmul via cache-friendly transpose",
+      "Made large matrix multiplication 3.37x faster through CPU-focused optimization",
       "3.44x additional speedup via int8 quantization at 1024³",
       "Validated against Python/NumPy reference outputs with a full correctness-testing suite"
     ],
