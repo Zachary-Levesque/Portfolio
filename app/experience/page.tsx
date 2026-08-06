@@ -30,7 +30,7 @@ export default function ExperiencePage() {
   const experienceCardClassName =
     `${experienceCardBaseClassName} transition-colors hover:bg-surface-blue`;
   const linkedExperienceCardClassName =
-    `${experienceCardBaseClassName} transform-gpu transition-all hover:-translate-y-1 hover:bg-surface-blue focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border`;
+    `${experienceCardBaseClassName} transform-gpu transition-all hover:-translate-y-2 hover:bg-surface-blue focus-visible:-translate-y-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border`;
   const renderExperienceContent = (entry: (typeof experience)[number]) => (
     <>
       <div className="flex flex-wrap items-baseline justify-between gap-3">
@@ -154,7 +154,7 @@ export default function ExperiencePage() {
               target="_blank"
               rel="noreferrer"
               aria-label="Visit University of Ottawa"
-              className="mt-2 block rounded-3xl transform-gpu transition-transform hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border"
+              className="mt-2 block rounded-3xl transform-gpu transition-transform hover:-translate-y-2 focus-visible:-translate-y-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border"
             >
               {teachingAssistantCard}
             </a>
