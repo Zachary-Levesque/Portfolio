@@ -38,7 +38,7 @@ export function PageLinks() {
       {previousPage ? (
         <ViewTransitionLink
           href={previousPage.href}
-          className="min-h-11 rounded-3xl border border-accent-border bg-surface p-5 text-muted transition-colors hover:bg-surface-blue hover:text-accent"
+          className="min-h-11 transform-gpu rounded-3xl border border-accent-border bg-surface p-5 text-muted transition-all hover:-translate-y-1 hover:bg-surface-blue hover:text-accent focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border"
         >
           <span className="block text-xs uppercase text-red-muted">
             Previous
@@ -54,7 +54,7 @@ export function PageLinks() {
       {nextPage ? (
         <ViewTransitionLink
           href={nextPage.href}
-          className="min-h-11 rounded-3xl border border-accent-border bg-surface p-5 text-right text-muted transition-colors hover:bg-surface-blue hover:text-accent"
+          className="min-h-11 transform-gpu rounded-3xl border border-accent-border bg-surface p-5 text-right text-muted transition-all hover:-translate-y-1 hover:bg-surface-blue hover:text-accent focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border"
         >
           <span className="block text-xs uppercase text-red-muted">Next</span>
           <span className="mt-2 block text-lg text-foreground">
