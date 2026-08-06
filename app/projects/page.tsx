@@ -28,8 +28,8 @@ export default function ProjectsPage() {
           Projects
         </h1>
         <p className="mt-4 leading-7 text-muted">
-          Systems projects across machine learning infrastructure, hardware
-          engineering, embedded products, quantitative research, and simulation.
+          Projects spanning machine learning infrastructure, hardware engineering,
+          embedded systems, quantitative research, and simulation.
         </p>
       </section>
 
