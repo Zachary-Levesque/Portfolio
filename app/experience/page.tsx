@@ -64,7 +64,7 @@ export default function ExperiencePage() {
   return (
     <div className="space-y-10">
       <section className="max-w-3xl">
-        <p className="font-mono text-sm uppercase text-accent-muted">Timeline</p>
+        <p className="font-mono text-sm uppercase text-red-muted">Timeline</p>
         <h1 className="mt-3 font-mono text-3xl font-semibold sm:text-4xl">
           Experience
         </h1>
