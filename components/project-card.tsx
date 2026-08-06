@@ -62,11 +62,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
         ))}
       </div>
 
-      {projectUrl ? (
-        <p className="mt-auto pt-6 font-mono text-sm text-accent">
-          View project
-        </p>
-      ) : null}
+      {projectUrl ? <div className="mt-auto pt-6" /> : null}
     </>
   );
 
