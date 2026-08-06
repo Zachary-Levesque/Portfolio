@@ -15,7 +15,7 @@ export const projects: Project[] = [
     dateRange: "May 2026 to Present",
     description:
       "AI-powered technical ramp-up copilot that maps a company's code, docs, projects, decisions, and people so new engineers can become productive faster. It turns scattered organizational knowledge into personalized technical mentorship.",
-    metrics: [],
+    metrics: ["Currently in development - coming soon"],
     techStack: [
       "TypeScript",
       "Python",
@@ -126,7 +126,9 @@ export const projects: Project[] = [
     dateRange: "Nov 2025 to Nov 2025",
     description:
       "Python desktop quiz game combining adaptive math practice with quantum-random question selection using Qiskit. An Elo-style rating system adjusts difficulty while quantum circuits drive category and question randomness. Built for the 2025 Qiskit Hackathon.",
-    metrics: [],
+    metrics: [
+      "Uses quantum randomness to create question behavior classical randomness cannot exactly reproduce"
+    ],
     techStack: ["Python", "Qiskit", "Tkinter", "Elo Rating"],
     githubUrl: "https://github.com/Zachary-Levesque/Quantum-Math-Quest",
     liveUrl: null
@@ -160,7 +162,9 @@ export const projects: Project[] = [
     logoPath: "/images/projects/real-time-trading-system.png",
     description:
       "Full-stack trading platform ingesting live market data and generating explainable BUY/HOLD/SELL recommendations through a signal-processing layer computing momentum, trend, volatility, and volume indicators.",
-    metrics: [],
+    metrics: [
+      "Explainable BUY/HOLD/SELL flow with S&P 500 browsing, confidence, risk, and recommendation history"
+    ],
     techStack: [
       "Python",
       "FastAPI",
@@ -179,7 +183,9 @@ export const projects: Project[] = [
     dateRange: "Sep 2024 to Dec 2024",
     description:
       "Collection of classical AI systems built from first principles, including a minimax Checkers AI, a Q-learning Nim agent, a constraint-satisfaction Crossword solver, a Minesweeper inference engine, and a PageRank simulation. The collection emphasizes algorithmic thinking over high-level library abstraction.",
-    metrics: [],
+    metrics: [
+      "Built five classic AI systems from search, learning, constraint solving, inference, and ranking"
+    ],
     techStack: [
       "Python",
       "Machine Learning",
@@ -196,7 +202,9 @@ export const projects: Project[] = [
     dateRange: "Apr 2024 to Jun 2024",
     description:
       "Collection of AI agent automations built in n8n connecting LLMs to real business tools, including appointment scheduling, lead research, LinkedIn content drafting, RAG-based document Q&A, and weather alerts. The project bridges AI from chat to real action.",
-    metrics: [],
+    metrics: [
+      "Connected LLM workflows to real tools for scheduling, research, drafting, RAG, and alerts"
+    ],
     techStack: [
       "n8n",
       "Python",
@@ -215,7 +223,9 @@ export const projects: Project[] = [
     logoPath: "/images/projects/parapicture-solutions.png",
     description:
       "Flexible arm system enabling individuals with limited mobility to independently capture photographs using a diverse range of photographic tools.",
-    metrics: [],
+    metrics: [
+      "Accessibility-focused hardware prototype for independent photography"
+    ],
     techStack: ["Hardware Prototyping", "Accessibility Design", "Leadership"],
     githubUrl: null,
     liveUrl: "https://makerepo.com/ZacharyLevesque/1715"
@@ -226,7 +236,9 @@ export const projects: Project[] = [
     logoPath: "/images/projects/1chat4you.png",
     description:
       "Application streamlining communication between landlords and tenants, providing a secure environment for real-time messaging, document sharing, and essential updates.",
-    metrics: [],
+    metrics: [
+      "Tenant-landlord communication product built for secure updates, chat, and document sharing"
+    ],
     techStack: ["TypeScript", "Leadership"],
     githubUrl: null,
     liveUrl: "https://makerepo.com/yumba075/1594.-1chat4you-"
@@ -237,7 +249,9 @@ export const projects: Project[] = [
     logoPath: "/images/projects/circuitflow.png",
     description:
       "Browser-based circuit simulation platform combining a SPICE-like netlist workflow with an interactive schematic editor, running DC, AC, and transient analysis directly in the browser via matrix-based nodal analysis.",
-    metrics: [],
+    metrics: [
+      "Runs DC, AC, and transient circuit analysis directly in the browser"
+    ],
     techStack: [
       "TypeScript",
       "React",
