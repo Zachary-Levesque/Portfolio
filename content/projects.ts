@@ -32,6 +32,7 @@ export const projects: Project[] = [
   {
     title: "Smart Sensing Seating System (Seets)",
     dateRange: "Sep 2025 to Present",
+    logoPath: "/images/projects/seets.png",
     description:
       "IoT smart seating startup product for real-time occupancy tracking and space utilization insights. Piloted at the University of Ottawa Heart Institute as the first live institutional deployment.",
     metrics: ["Live pilot deployment at the University of Ottawa Heart Institute"],
@@ -211,6 +212,7 @@ export const projects: Project[] = [
   {
     title: "ParaPicture Solutions",
     dateRange: "Sep 2023 to Dec 2023",
+    logoPath: "/images/projects/parapicture-solutions.png",
     description:
       "Flexible arm system enabling individuals with limited mobility to independently capture photographs using a diverse range of photographic tools.",
     metrics: [],
@@ -221,6 +223,7 @@ export const projects: Project[] = [
   {
     title: "1Chat4You",
     dateRange: "Jan 2023 to Apr 2023",
+    logoPath: "/images/projects/1chat4you.png",
     description:
       "Application streamlining communication between landlords and tenants, providing a secure environment for real-time messaging, document sharing, and essential updates.",
     metrics: [],
