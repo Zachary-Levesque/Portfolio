@@ -14,7 +14,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   const cardClassName =
     `${cardBaseClassName} transition-colors hover:bg-surface-blue`;
   const linkedCardClassName =
-    `${cardBaseClassName} transform-gpu transition-all hover:-translate-y-1 hover:bg-surface-blue focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border`;
+    `${cardBaseClassName} transform-gpu transition-all hover:-translate-y-2 hover:bg-surface-blue focus-visible:-translate-y-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border`;
   const cardContent = (
     <>
       <div className="mb-4 flex items-start justify-between gap-4">
