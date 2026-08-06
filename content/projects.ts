@@ -5,6 +5,7 @@ export type Project = {
   metrics: string[];
   githubUrl: string | null;
   liveUrl: string | null;
+  logoPath?: string;
   dateRange: string;
 };
 
@@ -50,6 +51,7 @@ export const projects: Project[] = [
   {
     title: "Smart Flood Detection System",
     dateRange: "Jul 2026 to Present",
+    logoPath: "/images/projects/smart-flood-detection-system.png",
     description:
       "ESP32 C3 Mini based IoT flood detection system built after repeated basement flooding. It monitors water level in real time, triggers an independent local buzzer and LED alarm, sends Telegram alerts over WiFi, and logs recent events for serial review.",
     metrics: [
@@ -73,6 +75,7 @@ export const projects: Project[] = [
   {
     title: "Mini Tensor Engine",
     dateRange: "Jan 2026 to May 2026",
+    logoPath: "/images/projects/mini-tensor-engine.png",
     description:
       "C++ inference runtime built to study how tensor layout, matmul kernel design, SIMD, cache locality, threading, and int8 quantization affect CPU inference latency. Every performance claim is backed by measured benchmarks, not intuition.",
     metrics: [
@@ -94,6 +97,7 @@ export const projects: Project[] = [
   {
     title: "Adaptive Market Regime Framework",
     dateRange: "Aug 2025 to Dec 2025",
+    logoPath: "/images/projects/adaptive-market-regime-framework.png",
     description:
       "Research-grade quantitative trading system detecting market regimes via Hidden Markov Models, blending alpha signals with SPY through a regime-aware allocation policy, backed by a reinforcement learning position-sizing agent and a full React product dashboard.",
     metrics: [
@@ -129,6 +133,7 @@ export const projects: Project[] = [
   {
     title: "Sports Strategy Engine",
     dateRange: "May 2025 to Sep 2025",
+    logoPath: "/images/projects/sports-strategy-engine.png",
     description:
       "Full-stack golf decision-analysis platform modeling shot strategy under uncertainty with a Monte Carlo simulation engine and a visual SVG hole editor for defining players, hole geometry, and hazards.",
     metrics: [
@@ -151,6 +156,7 @@ export const projects: Project[] = [
   {
     title: "Real-Time Trading System",
     dateRange: "Jan 2025 to May 2025",
+    logoPath: "/images/projects/real-time-trading-system.png",
     description:
       "Full-stack trading platform ingesting live market data and generating explainable BUY/HOLD/SELL recommendations through a signal-processing layer computing momentum, trend, volatility, and volume indicators.",
     metrics: [],
@@ -225,6 +231,7 @@ export const projects: Project[] = [
   {
     title: "CircuitFlow",
     dateRange: "Sep 2022 to Dec 2022",
+    logoPath: "/images/projects/circuitflow.png",
     description:
       "Browser-based circuit simulation platform combining a SPICE-like netlist workflow with an interactive schematic editor, running DC, AC, and transient analysis directly in the browser via matrix-based nodal analysis.",
     metrics: [],
