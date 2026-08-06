@@ -15,7 +15,7 @@ export const projects: Project[] = [
     dateRange: "May 2026 to Present",
     description:
       "AI-powered technical ramp-up copilot that maps a company's code, docs, projects, decisions, and people so new engineers can become productive faster. It turns scattered organizational knowledge into personalized technical mentorship.",
-    metrics: ["Currently in development - coming soon"],
+    metrics: ["Currently in development, coming soon!"],
     techStack: [
       "TypeScript",
       "Python",
