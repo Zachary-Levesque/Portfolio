@@ -140,7 +140,7 @@ export const projects: Project[] = [
     description:
       "Full-stack golf decision-analysis platform modeling shot strategy under uncertainty with a Monte Carlo simulation engine and a visual SVG hole editor for defining players, hole geometry, and hazards.",
     metrics: [
-      "Risk-adjusted strategy ranking with probability breakdowns and expected-stroke comparisons"
+      "Real-time caddy that helps choose the smartest shot strategy"
     ],
     techStack: [
       "React",
