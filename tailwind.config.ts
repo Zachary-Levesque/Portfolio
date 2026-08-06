@@ -9,23 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#EEF6FF",
+        background: "#DDEBFA",
         surface: "#FFFFFF",
-        "surface-raised": "#F7FBFF",
-        "surface-blue": "#E3F0FF",
+        "surface-raised": "#F4F9FF",
+        "surface-blue": "#D3E4F8",
         foreground: "#1D1D1F",
         muted: "#6E6E73",
         accent: "#004FB3",
         "accent-hover": "#003B85",
         "accent-soft": "#D6EAFE",
-        "accent-border": "#7CB8F7",
+        "accent-border": "#5F9EEA",
         "accent-muted": "#1E5E9F",
         red: "#C41E3A",
         "red-hover": "#991B30",
         "red-soft": "#FFE8EC",
         "red-border": "#F3A7B5",
         "red-muted": "#A73448",
-        border: "#C7D8EA"
+        border: "#AFC8E2"
       },
       fontFamily: {
         sans: ["var(--font-sans)", "Arial", "Helvetica", "sans-serif"],
