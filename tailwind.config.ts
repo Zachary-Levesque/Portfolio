@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#DDEBFA",
+        background: "#CFE0F4",
         surface: "#FFFFFF",
         "surface-raised": "#F4F9FF",
-        "surface-blue": "#D3E4F8",
+        "surface-blue": "#C6DAF2",
         foreground: "#1D1D1F",
         muted: "#6E6E73",
         accent: "#004FB3",
@@ -25,7 +25,7 @@ const config: Config = {
         "red-soft": "#FFE8EC",
         "red-border": "#F3A7B5",
         "red-muted": "#A73448",
-        border: "#AFC8E2"
+        border: "#9DBBD8"
       },
       fontFamily: {
         sans: ["var(--font-sans)", "Arial", "Helvetica", "sans-serif"],
