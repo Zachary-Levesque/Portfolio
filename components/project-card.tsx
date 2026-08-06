@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Project } from "@/content/projects";
 
 type ProjectCardProps = {
@@ -21,6 +22,17 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
             {project.title}
           </h3>
         </div>
+        {project.logoPath ? (
+          <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-2xl border border-accent-border bg-background">
+            <Image
+              src={project.logoPath}
+              alt={`${project.title} logo`}
+              fill
+              sizes="56px"
+              className="object-contain p-1"
+            />
+          </div>
+        ) : null}
       </div>
 
       <p
