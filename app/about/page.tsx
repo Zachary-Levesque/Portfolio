@@ -12,12 +12,12 @@ export default function AboutPage() {
     },
     {
       title: "A story",
-      body: "In summer 2025, I attended the NCKU Semiconductor Summer School in Taiwan on an International Experience Bursary, diving into Digital IC Design. The course covered Verilog coding, transistor-level layout, timing analysis, and synthesis. I finished with the top grade in the course. It sharpened my hands-on understanding of what happens below the software layer, right down to the transistor."
+      body: "In summer 2025, I attended the NCKU Semiconductor Summer School in Taiwan on an International Engineering Experience Bursary, diving into Digital IC Design. The course covered Verilog coding, transistor-level layout, timing analysis, and synthesis. I finished with the top grade in the course. It sharpened my hands-on understanding of what happens below the software layer, right down to the transistor."
     }
   ];
 
   return (
-    <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10">
+    <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_420px] lg:items-center lg:gap-10">
       <div className="space-y-8 sm:space-y-12">
         {sections.map((section) => (
           <section
@@ -34,14 +34,14 @@ export default function AboutPage() {
         ))}
       </div>
 
-      <figure className="mx-auto w-full max-w-sm lg:mx-0 lg:max-w-none">
+      <figure className="mx-auto w-full max-w-md lg:mx-0 lg:max-w-none">
         <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-accent-border bg-surface-blue p-2">
           <Image
             src="/images/taiwan.jpeg"
             alt="Zachary at NCKU Semiconductor Summer School in Taiwan"
             fill
             priority
-            sizes="(max-width: 1024px) 100vw, 320px"
+            sizes="(max-width: 1024px) 100vw, 420px"
             className="rounded-[1.25rem] object-cover object-[50%_35%]"
           />
         </div>
