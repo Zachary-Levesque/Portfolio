@@ -63,7 +63,7 @@ export default function HobbiesPage() {
   return (
     <div className="space-y-10">
       <section className="max-w-3xl">
-        <p className="font-mono text-sm uppercase text-accent-muted">
+        <p className="font-mono text-sm uppercase text-red-muted">
           Outside work
         </p>
         <h1 className="mt-3 font-mono text-3xl font-semibold text-foreground sm:text-4xl">
