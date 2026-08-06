@@ -10,7 +10,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   const topMetric = project.metrics[0];
   const projectUrl = project.liveUrl ?? project.githubUrl;
   const cardClassName =
-    "flex h-full min-w-0 flex-col rounded-3xl border border-red-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6";
+    "flex h-full min-w-0 flex-col rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6";
   const cardContent = (
     <>
       <div className="mb-4 flex items-start justify-between gap-4">
@@ -23,7 +23,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
           </h3>
         </div>
         {project.logoPath ? (
-          <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-accent-border bg-background">
+          <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-red-border bg-background">
             <Image
               src={project.logoPath}
               alt={`${project.title} logo`}
