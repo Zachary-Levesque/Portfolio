@@ -6,8 +6,9 @@ import { ViewTransitionProvider } from "@/components/view-transition-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Personal portfolio for systems engineering and quant-track roles.",
+  title: "Zachary Levesque | Portfolio",
+  description:
+    "Electrical Engineering and Physics student building systems across machine learning infrastructure, hardware engineering, embedded systems, quantitative research, and simulation.",
   icons: {
     icon: "/favicon.svg"
   }
