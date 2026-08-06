@@ -8,11 +8,11 @@ export default function AboutPage() {
     },
     {
       title: "What I do now",
-      body: "I'm currently a Systems Verification Engineer at Ranovus, working across hardware and firmware boundaries to implement and validate communication protocols like I2C and SPI. Alongside that, I'm building Seets, an IoT occupancy tracking startup I co founded that's now piloting at the University of Ottawa Heart Institute. Across engineering and entrepreneurship, I care about understanding the principles behind a system so I can build, test, and improve it with purpose."
+      body: "I'm currently a Systems Verification Engineer at Ranovus, working across hardware and firmware boundaries to implement and validate communication protocols like I2C and SPI. Alongside that, I'm building Seets, an IoT occupancy tracking startup I co-founded that's now piloting at the University of Ottawa Heart Institute. Across engineering and entrepreneurship, I care about understanding the principles behind a system so I can build, test, and improve it with purpose."
     },
     {
       title: "A story",
-      body: "In summer 2025, I attended the NCKU Semiconductor Summer School in Taiwan on an International Experience Bursary, diving into Digital IC Design. The course covered Verilog coding, transistor level layout, timing analysis, and synthesis. I finished with the top grade in the course. It sharpened my hands on understanding of what happens below the software layer, right down to the transistor."
+      body: "In summer 2025, I attended the NCKU Semiconductor Summer School in Taiwan on an International Experience Bursary, diving into Digital IC Design. The course covered Verilog coding, transistor-level layout, timing analysis, and synthesis. I finished with the top grade in the course. It sharpened my hands-on understanding of what happens below the software layer, right down to the transistor."
     }
   ];
 
