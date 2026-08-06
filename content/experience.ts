@@ -2,6 +2,7 @@ export type ExperienceEntry = {
   company: string;
   role: string;
   dateRange: string;
+  websiteUrl: string | null;
   bullets: string[];
   skills: string[];
 };
@@ -11,6 +12,7 @@ export const experience: ExperienceEntry[] = [
     company: "Ranovus Inc.",
     role: "Systems Verification Engineer (Intern)",
     dateRange: "May 2026 to Present, Kanata, ON",
+    websiteUrl: "https://ranovus.com/",
     bullets: [
       "Developed Python-based test scripts and validation infrastructure for I2C and SPI communication protocols on MCU-based hardware",
       "Collaborated with the firmware team, working in C#, to implement and debug embedded firmware supporting protocol validation",
@@ -29,6 +31,7 @@ export const experience: ExperienceEntry[] = [
     company: "Seets Inc",
     role: "CEO & Co-Founder",
     dateRange: "May 2026 to Present, Ottawa, ON",
+    websiteUrl: "https://seets.live/",
     bullets: [
       "Co-founded an IoT smart seating startup focused on real-time occupancy tracking for institutions",
       "Driving product vision, engineering strategy, system architecture, and technical execution",
@@ -53,6 +56,7 @@ export const experience: ExperienceEntry[] = [
     company: "University of Ottawa",
     role: "Teaching Assistant (Tutorial) - PHY 1722: Principles of Physics II",
     dateRange: "Jan 2026 to May 2026, Ottawa, ON",
+    websiteUrl: "https://www.uottawa.ca/",
     bullets: [
       "Led tutorial sessions supporting students in electricity and magnetism, waves, and related problem-solving techniques",
       "Provided one-on-one and small-group academic support through the Physics Help Centre",
@@ -64,6 +68,7 @@ export const experience: ExperienceEntry[] = [
     company: "University of Ottawa",
     role: "Teaching Assistant (Tutorial) - ELG 3525: Signal & System Analysis",
     dateRange: "Sep 2025 to Dec 2025, Ottawa, ON",
+    websiteUrl: "https://www.uottawa.ca/",
     bullets: [
       "Facilitated tutorial sessions guiding students through signal and system analysis concepts",
       "Supported students with problem-solving techniques for complex electrical engineering coursework",
@@ -80,6 +85,7 @@ export const experience: ExperienceEntry[] = [
     company: "APRIQuOt",
     role: "Quantum AI Researcher (Intern)",
     dateRange: "Sep 2025 to Apr 2026, Ottawa, ON",
+    websiteUrl: "https://czischek-group.uottawa.ca/",
     bullets: [
       "Developed neural networks to reconstruct multi-qubit quantum states",
       "Used Qiskit for quantum computing to study quantum chaos in complex multi-qubit systems",
@@ -98,6 +104,7 @@ export const experience: ExperienceEntry[] = [
     company: "Huawei",
     role: "Systems Engineer, Optical Communications (Intern)",
     dateRange: "May 2025 to Aug 2025, Ottawa, ON",
+    websiteUrl: "https://www.huawei.com/",
     bullets: [
       "Conducted R&D on high-speed optical data transmission, designing communication links using EDFA, WSS, optical transceivers, OSA",
       "Implemented Python automation for link control and data acquisition, boosting throughput and enhancing results",
@@ -115,6 +122,7 @@ export const experience: ExperienceEntry[] = [
     company: "Thin-Film Electronics Laboratory",
     role: "Semiconductor Engineer (Intern)",
     dateRange: "Jan 2025 to Apr 2025, Ottawa, ON",
+    websiteUrl: "https://uniweb.uottawa.ca/sites/sml",
     bullets: [
       "Conducted research on non-linear charge injection in n-type organic transistors",
       "Simulated device behavior using Atlas TCAD software to model thin-film transistor parameters",
@@ -132,6 +140,7 @@ export const experience: ExperienceEntry[] = [
     company: "Hydro Ottawa",
     role: "Data Engineering (Intern)",
     dateRange: "May 2024 to Aug 2024, Ottawa, ON",
+    websiteUrl: "https://hydroottawa.com/",
     bullets: [
       "Analyzed and leveraged GIS data for the city's Electrical Distribution Network to optimize performance and infrastructure development",
       "Developed a Java program to transfer data between software applications, improving workflow efficiency",
@@ -143,6 +152,7 @@ export const experience: ExperienceEntry[] = [
     company: "Festival House",
     role: "Design Engineer (Intern)",
     dateRange: "Jun 2022 to Jul 2024, Ottawa, ON",
+    websiteUrl: null,
     bullets: [
       "Designed detailed plans and layouts for major events including Bluesfest and Canada Day, supporting large-scale infrastructure deployment",
       "Applied engineering principles and analytical methods to ensure structural safety, regulatory compliance, and efficient site utilization",
@@ -154,6 +164,7 @@ export const experience: ExperienceEntry[] = [
     company: "CECCE",
     role: "Software Engineer (Intern)",
     dateRange: "May 2020 to Sep 2020, Ottawa, ON",
+    websiteUrl: null,
     bullets: [
       "Created software allowing students to do school work virtually",
       "Used strong analytical and problem-solving skills to develop effective solutions for challenging situations",
