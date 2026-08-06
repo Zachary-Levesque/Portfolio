@@ -25,7 +25,7 @@ export default function ContactPage() {
           <a
             key={link.href}
             href={link.href}
-            className="block min-h-11 transform-gpu rounded-2xl border border-red-border bg-surface-blue px-5 py-4 text-accent transition-all hover:-translate-y-1 hover:bg-red-soft hover:text-red focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border"
+            className="block min-h-11 transform-gpu rounded-2xl border border-red-border bg-surface-blue px-5 py-4 text-accent transition-all hover:-translate-y-2 hover:bg-red-soft hover:text-red focus-visible:-translate-y-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border"
           >
             {link.label}
           </a>
@@ -34,7 +34,7 @@ export default function ContactPage() {
           href="/files/resume.pdf"
           target="_blank"
           rel="noreferrer"
-          className="block min-h-11 transform-gpu rounded-2xl border border-accent bg-accent px-5 py-4 text-base text-surface transition-all hover:-translate-y-1 hover:border-accent-hover hover:bg-accent-hover focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border"
+          className="block min-h-11 transform-gpu rounded-2xl border border-accent bg-accent px-5 py-4 text-base text-surface transition-all hover:-translate-y-2 hover:border-accent-hover hover:bg-accent-hover focus-visible:-translate-y-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border"
         >
           Resume
         </a>
