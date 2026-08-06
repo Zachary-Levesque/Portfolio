@@ -163,7 +163,7 @@ export const projects: Project[] = [
     description:
       "Full-stack trading platform ingesting live market data and generating explainable BUY/HOLD/SELL recommendations through a signal-processing layer computing momentum, trend, volatility, and volume indicators.",
     metrics: [
-      "Explainable BUY/HOLD/SELL flow with S&P 500 browsing, confidence, risk, and recommendation history"
+      "Analyze S&P 500 stocks and get recommended trades on demand"
     ],
     techStack: [
       "Python",
