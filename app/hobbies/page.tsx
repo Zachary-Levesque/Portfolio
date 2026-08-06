@@ -24,7 +24,7 @@ export default function HobbiesPage() {
       imageAlt: "Zachary golfing",
       imagePosition: "object-[50%_78%]",
       description:
-        "I started golfing about four years ago and I am still working on my game. I am definitely not the best yet, and I currently play at a 15 handicap."
+        "I started golfing about four years ago and I am still working on my game. I currently play at a 15 handicap and enjoy the steady process of improving."
     },
     {
       title: "Guitar",
@@ -48,7 +48,7 @@ export default function HobbiesPage() {
       imageAlt: "Zachary at a sports event",
       imagePosition: "object-[50%_70%]",
       description:
-        "Beyond soccer, golf, and skiing, I love sports, the competitive aspect, and playing as part of a team. I am the most competitive person in the world, and sports have been an integral part of my life."
+        "Beyond soccer, golf, and skiing, I love sports, the competitive aspect, and playing as part of a team. Sports have been an integral part of my life and continue to shape how I approach competition and teamwork."
     },
     {
       title: "The Outdoors",
