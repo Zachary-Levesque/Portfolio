@@ -15,7 +15,7 @@ export default function HomePage() {
           </p>
           <p className="mt-6 leading-7 text-muted">
             I&apos;m currently a Systems Verification Engineer at Ranovus and
-            CEO/co-founder of Seets. I&apos;m graduating in April 2027 and
+            CEO/Co-Founder of Seets. I&apos;m graduating in April 2027 and
             targeting systems engineering, related engineering roles, and
             quantitative roles.
           </p>
