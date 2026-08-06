@@ -224,7 +224,7 @@ export const projects: Project[] = [
     description:
       "Flexible arm system enabling individuals with limited mobility to independently capture photographs using a diverse range of photographic tools.",
     metrics: [
-      "Accessibility-focused hardware prototype for independent photography"
+      "Used by a client entering photography school to support independent image capture"
     ],
     techStack: ["Hardware Prototyping", "Accessibility Design", "Leadership"],
     githubUrl: null,
