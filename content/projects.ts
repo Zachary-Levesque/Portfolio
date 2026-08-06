@@ -184,7 +184,7 @@ export const projects: Project[] = [
     description:
       "Collection of classical AI systems built from first principles, including a minimax Checkers AI, a Q-learning Nim agent, a constraint-satisfaction Crossword solver, a Minesweeper inference engine, and a PageRank simulation. The collection emphasizes algorithmic thinking over high-level library abstraction.",
     metrics: [
-      "Built five classic AI systems from search, learning, constraint solving, inference, and ranking"
+      "Used AI to solve the little games we all love"
     ],
     techStack: [
       "Python",
@@ -203,7 +203,7 @@ export const projects: Project[] = [
     description:
       "Collection of AI agent automations built in n8n connecting LLMs to real business tools, including appointment scheduling, lead research, LinkedIn content drafting, RAG-based document Q&A, and weather alerts. The project bridges AI from chat to real action.",
     metrics: [
-      "Connected LLM workflows to real tools for scheduling, research, drafting, RAG, and alerts"
+      "Built usable AI automations that connect to real tools and make everyday tasks easier"
     ],
     techStack: [
       "n8n",
