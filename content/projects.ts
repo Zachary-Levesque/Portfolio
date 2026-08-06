@@ -78,7 +78,7 @@ export const projects: Project[] = [
     dateRange: "Jan 2026 to May 2026",
     logoPath: "/images/projects/mini-tensor-engine.png",
     description:
-      "C++ inference runtime built to study how tensor layout, matmul kernel design, SIMD, cache locality, threading, and int8 quantization affect CPU inference latency. Every performance claim is backed by measured benchmarks, not intuition.",
+      "C++ machine learning inference engine built to understand how low-level performance choices affect model speed on a CPU. The project compares different optimization strategies and backs each performance claim with measured benchmarks.",
     metrics: [
       "3.37x speedup over naive baseline at 1024³ matmul via cache-friendly transpose",
       "3.44x additional speedup via int8 quantization at 1024³",
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     dateRange: "Aug 2025 to Dec 2025",
     logoPath: "/images/projects/adaptive-market-regime-framework.png",
     description:
-      "Research-grade quantitative trading system detecting market regimes via Hidden Markov Models, blending alpha signals with SPY through a regime-aware allocation policy, backed by a reinforcement learning position-sizing agent and a full React product dashboard.",
+      "Quantitative trading research platform built to study how market conditions change over time and how strategies can adapt to them. It combines market signal analysis, portfolio allocation logic, automated position sizing, and a React dashboard for exploring results.",
     metrics: [
       "1.09 Sharpe ratio vs. 0.95 for SPY",
       "Max drawdown reduced to -20.7% vs. -31.2% for SPY",
