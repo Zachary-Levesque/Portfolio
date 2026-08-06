@@ -127,7 +127,7 @@ export const projects: Project[] = [
     description:
       "Python desktop quiz game combining adaptive math practice with quantum-random question selection using Qiskit. An Elo-style rating system adjusts difficulty while quantum circuits drive category and question randomness. Built for the 2025 Qiskit Hackathon.",
     metrics: [
-      "Uses quantum randomness to create question behavior classical randomness cannot exactly reproduce"
+      "Leverages the power of quantum computers in ways classical computers cannot"
     ],
     techStack: ["Python", "Qiskit", "Tkinter", "Elo Rating"],
     githubUrl: "https://github.com/Zachary-Levesque/Quantum-Math-Quest",
