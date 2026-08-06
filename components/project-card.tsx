@@ -7,9 +7,11 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   const topMetric = project.metrics[0];
-
-  return (
-    <article className="flex h-full min-w-0 flex-col rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6">
+  const projectUrl = project.liveUrl ?? project.githubUrl;
+  const cardClassName =
+    "flex h-full min-w-0 flex-col rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6";
+  const cardContent = (
+    <>
       <div className="mb-4 flex items-start justify-between gap-4">
         <div className="min-w-0">
           <p className="font-mono text-xs uppercase text-muted">
@@ -48,28 +50,27 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
         ))}
       </div>
 
-      <div className="mt-auto flex flex-wrap gap-4 pt-6 font-mono text-sm">
-        {project.githubUrl ? (
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="text-accent transition-colors hover:text-accent-hover"
-          >
-            GitHub
-          </a>
-        ) : null}
-        {project.liveUrl ? (
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="text-accent transition-colors hover:text-accent-hover"
-          >
-            Live
-          </a>
-        ) : null}
-      </div>
+      {projectUrl ? (
+        <p className="mt-auto pt-6 font-mono text-sm text-accent">
+          View project
+        </p>
+      ) : null}
+    </>
+  );
+
+  return projectUrl ? (
+    <article className="h-full">
+      <a
+        href={projectUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={`Open ${project.title}`}
+        className={cardClassName}
+      >
+        {cardContent}
+      </a>
     </article>
+  ) : (
+    <article className={cardClassName}>{cardContent}</article>
   );
 }
