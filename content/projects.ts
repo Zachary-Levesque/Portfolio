@@ -250,7 +250,7 @@ export const projects: Project[] = [
     description:
       "Browser-based circuit simulation platform combining a SPICE-like netlist workflow with an interactive schematic editor, running DC, AC, and transient analysis directly in the browser via matrix-based nodal analysis.",
     metrics: [
-      "Runs DC, AC, and transient circuit analysis directly in the browser"
+      "My first project, built to run circuit analysis directly in the browser"
     ],
     techStack: [
       "TypeScript",
