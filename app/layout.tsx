@@ -15,8 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Zachary Levesque | Portfolio",
-    description:
-      "Machine learning infrastructure, hardware engineering, embedded systems, quantitative research, and simulation.",
+    description: "Personal portfolio.",
     url: "https://www.zacharylevesque.site",
     siteName: "Zachary Levesque",
     images: [
@@ -32,8 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Zachary Levesque | Portfolio",
-    description:
-      "Machine learning infrastructure, hardware engineering, embedded systems, quantitative research, and simulation.",
+    description: "Personal portfolio.",
     images: ["/og-image.png"]
   }
 };
