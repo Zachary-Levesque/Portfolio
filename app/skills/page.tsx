@@ -20,16 +20,16 @@ export default function SkillsPage() {
         {skillGroups.map((group) => (
           <article
             key={group.category}
-            className="rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6"
+            className="rounded-3xl border border-accent-border border-l-red bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6"
           >
-            <h2 className="font-mono text-xl font-semibold text-foreground">
+            <h2 className="font-mono text-xl font-semibold text-red-muted">
               {group.category}
             </h2>
             <div className="mt-5 flex flex-wrap gap-2">
               {group.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-accent-border bg-accent-soft px-3 py-1.5 font-mono text-xs text-accent-muted"
+                  className="rounded-full border border-red-border bg-red-soft px-3 py-1.5 font-mono text-xs text-red-muted"
                 >
                   {skill}
                 </span>
