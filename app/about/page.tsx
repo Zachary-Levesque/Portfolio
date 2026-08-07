@@ -34,7 +34,7 @@ export default function AboutPage() {
               key={section.title}
               className="space-y-3 rounded-3xl border border-accent-border bg-surface p-5 sm:p-6"
             >
-              <h2 className="font-mono text-xl font-semibold text-accent-muted">
+              <h2 className="font-mono text-xl font-semibold text-red-muted">
                 {section.title}
               </h2>
               <p className="leading-7 text-foreground sm:text-lg sm:leading-8">
