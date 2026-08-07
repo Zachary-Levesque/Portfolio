@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#061426"/>
+  <rect x="88" y="76" width="8" height="478" fill="#FF2E63"/>
+  <path d="M916 494 1100 310" stroke="#2D609A" stroke-width="3" opacity=".55"/>
+  <path d="M944 534 1138 340" stroke="#69A7FF" stroke-width="2" opacity=".25"/>
+  <text x="132" y="146" fill="#FF7899" font-family="Menlo, Monaco, Consolas, monospace" font-size="28" letter-spacing="2">PORTFOLIO</text>
+  <text x="132" y="244" fill="#F7FBFF" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700">Zachary</text>
+  <text x="132" y="318" fill="#F7FBFF" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700">Levesque</text>
+  <text x="132" y="392" fill="#B7C5D8" font-family="Arial, Helvetica, sans-serif" font-size="30">Machine learning infrastructure, hardware</text>
+  <text x="132" y="434" fill="#B7C5D8" font-family="Arial, Helvetica, sans-serif" font-size="30">engineering, embedded systems, quant,</text>
+  <text x="132" y="476" fill="#B7C5D8" font-family="Arial, Helvetica, sans-serif" font-size="30">and simulation.</text>
+  <rect x="132" y="488" width="180" height="6" fill="#FF2E63"/>
+  <rect x="852" y="184" width="260" height="260" rx="36" fill="none" stroke="#2D609A" stroke-width="3"/>
+  <text x="911" y="386" fill="#69A7FF" font-family="Arial, Helvetica, sans-serif" font-size="184" font-weight="800">Z</text>
+  <rect x="939" y="374" width="150" height="18" fill="#FF2E63" transform="rotate(-38 1014 383)"/>
+</svg>
