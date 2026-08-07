@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#061426"/>
-  <rect x="86" y="82" width="8" height="466" fill="#FF2E63"/>
-  <path d="M835 497 1098 234" stroke="#2D609A" stroke-width="3" opacity=".48"/>
-  <path d="M872 536 1134 274" stroke="#69A7FF" stroke-width="2" opacity=".24"/>
-  <text x="140" y="174" fill="#FF7899" font-family="Menlo, Monaco, Consolas, monospace" font-size="32" letter-spacing="3">PORTFOLIO</text>
-  <text x="140" y="310" fill="#F7FBFF" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700">Zachary</text>
-  <text x="140" y="398" fill="#F7FBFF" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700">Levesque</text>
-  <rect x="140" y="456" width="210" height="8" fill="#FF2E63"/>
-  <rect x="825" y="165" width="292" height="292" rx="42" fill="none" stroke="#2D609A" stroke-width="4"/>
-  <path d="M899 232h147v34L948 369h102v34H893v-36l98-101h-92v-34Z" fill="#69A7FF"/>
-  <path d="M904 381 1030 255h38v18L942 399h-38v-18Z" fill="#FF2E63"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1260" viewBox="0 0 2400 1260">
+  <rect width="2400" height="1260" fill="#061426"/>
+  <rect x="172" y="164" width="16" height="932" fill="#FF2E63"/>
+  <text x="280" y="412" fill="#FF7899" font-family="Menlo, Monaco, Consolas, monospace" font-size="64" letter-spacing="6">PORTFOLIO</text>
+  <text x="280" y="628" fill="#F7FBFF" font-family="Arial, Helvetica, sans-serif" font-size="164" font-weight="700">Zachary</text>
+  <text x="280" y="798" fill="#F7FBFF" font-family="Arial, Helvetica, sans-serif" font-size="164" font-weight="700">Levesque</text>
+  <rect x="280" y="890" width="420" height="16" fill="#FF2E63"/>
+  <rect x="1644" y="338" width="584" height="584" rx="84" fill="none" stroke="#2D609A" stroke-width="8"/>
+  <rect x="1794" y="484" width="286" height="38" fill="#69A7FF"/>
+  <rect x="1794" y="730" width="286" height="38" fill="#69A7FF"/>
+  <rect x="1782" y="606" width="352" height="42" fill="#69A7FF" transform="rotate(-45 1958 627)"/>
+  <rect x="1772" y="612" width="374" height="46" fill="#FF2E63" transform="rotate(-45 1959 635)"/>
 </svg>
