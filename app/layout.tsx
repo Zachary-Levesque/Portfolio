@@ -6,11 +6,35 @@ import { ViewTransitionProvider } from "@/components/view-transition-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.zacharylevesque.site"),
   title: "Zachary Levesque | Portfolio",
   description:
     "Electrical Engineering and Physics student building systems across machine learning infrastructure, hardware engineering, embedded systems, quantitative research, and simulation.",
   icons: {
     icon: "/favicon.svg"
+  },
+  openGraph: {
+    title: "Zachary Levesque | Portfolio",
+    description:
+      "Machine learning infrastructure, hardware engineering, embedded systems, quantitative research, and simulation.",
+    url: "https://www.zacharylevesque.site",
+    siteName: "Zachary Levesque",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Zachary Levesque portfolio preview"
+      }
+    ],
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zachary Levesque | Portfolio",
+    description:
+      "Machine learning infrastructure, hardware engineering, embedded systems, quantitative research, and simulation.",
+    images: ["/opengraph-image"]
   }
 };
 
