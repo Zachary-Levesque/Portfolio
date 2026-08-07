@@ -86,7 +86,6 @@ export default function ExperiencePage() {
   const teachingAssistantCard = (
     <div className="rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6">
       <div className="min-w-0">
-        <p className={dateClassName}>Sep 2025 to May 2026, Ottawa, ON</p>
         <h2 className="mt-2 font-mono text-xl font-semibold text-foreground sm:text-2xl">
           Teaching Assistant
         </h2>
