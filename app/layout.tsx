@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: "Zachary Levesque | Portfolio",
   description: "Personal portfolio.",
   icons: {
-    icon: "/favicon.svg"
+    icon: "/z-logo.png",
+    apple: "/z-logo.png"
   },
   openGraph: {
     title: "Zachary Levesque | Portfolio",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Zachary Levesque",
     images: [
       {
-        url: "/og-image-v2.png",
+        url: "/og-image-v9.png",
         width: 2400,
         height: 1260,
         alt: "Zachary Levesque portfolio preview"
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zachary Levesque | Portfolio",
     description: "Personal portfolio.",
-    images: ["/og-image-v2.png"]
+    images: ["/og-image-v9.png"]
   }
 };
 
