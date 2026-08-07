@@ -38,7 +38,7 @@ export default function ExperiencePage() {
           <h2 className="font-mono text-xl font-semibold text-foreground sm:text-2xl">
             {entry.role}
           </h2>
-          <p className="mt-1 text-accent-muted">{entry.company}</p>
+          <p className="mt-1 text-red-muted">{entry.company}</p>
         </div>
       </div>
 
@@ -91,7 +91,7 @@ export default function ExperiencePage() {
           <h2 className="font-mono text-xl font-semibold text-foreground sm:text-2xl">
             Teaching Assistant
           </h2>
-          <p className="mt-1 text-accent-muted">University of Ottawa</p>
+          <p className="mt-1 text-red-muted">University of Ottawa</p>
         </div>
       </div>
 
