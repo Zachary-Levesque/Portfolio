@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "Zachary Levesque",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Zachary Levesque portfolio preview"
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Zachary Levesque | Portfolio",
     description:
       "Machine learning infrastructure, hardware engineering, embedded systems, quantitative research, and simulation.",
-    images: ["/opengraph-image"]
+    images: ["/og-image.png"]
   }
 };
 
