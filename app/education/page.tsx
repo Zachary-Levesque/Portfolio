@@ -73,7 +73,7 @@ export default function EducationPage() {
               <h3 className="mt-2 font-mono text-xl font-semibold text-foreground">
                 {award.title}
               </h3>
-              <p className="mt-2 text-sm text-accent-muted">
+              <p className="mt-2 text-sm text-red-muted">
                 Issued by {award.issuer}
               </p>
               {award.associatedWith ? (
