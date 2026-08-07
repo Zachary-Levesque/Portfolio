@@ -31,16 +31,15 @@ export default function ExperiencePage() {
     `${experienceCardBaseClassName} transition-colors hover:bg-surface-blue`;
   const linkedExperienceCardClassName =
     `${experienceCardBaseClassName} transform-gpu transition-all hover:-translate-y-3 hover:bg-surface-blue focus-visible:-translate-y-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border`;
+  const dateClassName = "font-mono text-sm text-muted";
   const renderExperienceContent = (entry: (typeof experience)[number]) => (
     <>
-      <p className="font-mono text-sm text-muted">{entry.dateRange}</p>
-      <div className="flex flex-wrap items-baseline justify-between gap-3">
-        <div className="min-w-0">
-          <h2 className="mt-2 font-mono text-xl font-semibold text-foreground sm:text-2xl">
-            {entry.role}
-          </h2>
-          <p className="mt-1 text-red-muted">{entry.company}</p>
-        </div>
+      <div className="min-w-0">
+        <p className={dateClassName}>{entry.dateRange}</p>
+        <h2 className="mt-2 font-mono text-xl font-semibold text-foreground sm:text-2xl">
+          {entry.role}
+        </h2>
+        <p className="mt-1 text-red-muted">{entry.company}</p>
       </div>
 
       <ul className="mt-5 space-y-3 text-sm leading-6 text-muted">
@@ -86,16 +85,12 @@ export default function ExperiencePage() {
 
   const teachingAssistantCard = (
     <div className="rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6">
-      <p className="font-mono text-sm text-muted">
-        Sep 2025 to May 2026, Ottawa, ON
-      </p>
-      <div className="flex flex-wrap items-baseline justify-between gap-3">
-        <div className="min-w-0">
-          <h2 className="mt-2 font-mono text-xl font-semibold text-foreground sm:text-2xl">
-            Teaching Assistant
-          </h2>
-          <p className="mt-1 text-red-muted">University of Ottawa</p>
-        </div>
+      <div className="min-w-0">
+        <p className={dateClassName}>Sep 2025 to May 2026, Ottawa, ON</p>
+        <h2 className="mt-2 font-mono text-xl font-semibold text-foreground sm:text-2xl">
+          Teaching Assistant
+        </h2>
+        <p className="mt-1 text-red-muted">University of Ottawa</p>
       </div>
 
       <div className="mt-5 space-y-5">
@@ -104,7 +99,7 @@ export default function ExperiencePage() {
             key={taEntry.role}
             className="border-t border-accent-border pt-5 first:border-t-0 first:pt-0"
           >
-            <p className="font-mono text-sm text-muted">{taEntry.dateRange}</p>
+            <p className={dateClassName}>{taEntry.dateRange}</p>
             <h3 className="mt-2 font-mono text-lg font-semibold text-foreground sm:text-xl">
               {taEntry.role}
             </h3>
