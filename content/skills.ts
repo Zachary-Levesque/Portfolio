@@ -57,8 +57,11 @@ export const skillGroups: SkillGroup[] = [
     category: "Hardware & Embedded Systems",
     skills: [
       "Arduino",
+      "Raspberry Pi",
       "STM32",
       "ESP",
+      "PCB Design",
+      "Communication Protocols",
       "Optical Linecards",
       "Embedded Systems"
     ]
