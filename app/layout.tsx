@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Zachary Levesque",
     images: [
       {
-        url: "/og-image-v12.png",
+        url: "/og-image-v13.png",
         width: 2400,
         height: 1260,
         alt: "Zachary Levesque portfolio preview"
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zachary Levesque | Portfolio",
     description: "Personal portfolio.",
-    images: ["/og-image-v12.png"]
+    images: ["/og-image-v13.png"]
   }
 };
 
