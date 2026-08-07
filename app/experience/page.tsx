@@ -26,16 +26,17 @@ export default function ExperiencePage() {
     firstTeachingAssistantIndex
   );
   const experienceCardBaseClassName =
-    "mt-2 block rounded-3xl border border-accent-border bg-surface p-5 sm:p-6";
+    "block rounded-3xl border border-accent-border bg-surface p-5 sm:p-6";
   const experienceCardClassName =
     `${experienceCardBaseClassName} transition-colors hover:bg-surface-blue`;
   const linkedExperienceCardClassName =
     `${experienceCardBaseClassName} transform-gpu transition-all hover:-translate-y-3 hover:bg-surface-blue focus-visible:-translate-y-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border`;
   const renderExperienceContent = (entry: (typeof experience)[number]) => (
     <>
+      <p className="font-mono text-sm text-muted">{entry.dateRange}</p>
       <div className="flex flex-wrap items-baseline justify-between gap-3">
         <div className="min-w-0">
-          <h2 className="font-mono text-xl font-semibold text-foreground sm:text-2xl">
+          <h2 className="mt-2 font-mono text-xl font-semibold text-foreground sm:text-2xl">
             {entry.role}
           </h2>
           <p className="mt-1 text-red-muted">{entry.company}</p>
@@ -65,7 +66,6 @@ export default function ExperiencePage() {
   );
   const renderExperienceEntry = (entry: (typeof experience)[number]) => (
     <article key={`${entry.company}-${entry.role}`} className="relative">
-      <p className="font-mono text-sm text-muted">{entry.dateRange}</p>
       {entry.websiteUrl ? (
         <a
           href={entry.websiteUrl}
@@ -86,9 +86,12 @@ export default function ExperiencePage() {
 
   const teachingAssistantCard = (
     <div className="rounded-3xl border border-accent-border bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6">
+      <p className="font-mono text-sm text-muted">
+        Sep 2025 to May 2026, Ottawa, ON
+      </p>
       <div className="flex flex-wrap items-baseline justify-between gap-3">
         <div className="min-w-0">
-          <h2 className="font-mono text-xl font-semibold text-foreground sm:text-2xl">
+          <h2 className="mt-2 font-mono text-xl font-semibold text-foreground sm:text-2xl">
             Teaching Assistant
           </h2>
           <p className="mt-1 text-red-muted">University of Ottawa</p>
@@ -145,16 +148,13 @@ export default function ExperiencePage() {
         {entriesBeforeTeachingAssistant.map(renderExperienceEntry)}
 
         <article>
-          <p className="font-mono text-sm text-muted">
-            Sep 2025 to May 2026, Ottawa, ON
-          </p>
           {teachingAssistantUrl ? (
             <a
               href={teachingAssistantUrl}
               target="_blank"
               rel="noreferrer"
               aria-label="Visit University of Ottawa"
-              className="mt-2 block rounded-3xl transform-gpu transition-transform hover:-translate-y-3 focus-visible:-translate-y-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border"
+              className="block rounded-3xl transform-gpu transition-transform hover:-translate-y-3 focus-visible:-translate-y-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-border"
             >
               {teachingAssistantCard}
             </a>
