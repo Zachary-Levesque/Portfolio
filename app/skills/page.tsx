@@ -20,7 +20,7 @@ export default function SkillsPage() {
         {skillGroups.map((group) => (
           <article
             key={group.category}
-            className="rounded-3xl border border-accent-border border-l-red bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6"
+            className="rounded-3xl border border-accent-border border-l-4 border-l-red bg-surface p-5 transition-colors hover:bg-surface-blue sm:p-6"
           >
             <h2 className="font-mono text-xl font-semibold text-red-muted">
               {group.category}
